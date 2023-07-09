@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    min-width: 587px;
+}
+header{
+
+    background-color: #27afa3ff;
+    min-width: 587px;
+}
+main{
+
+    background-color: #faefa0ff;
+    min-width: 587px;
+}
+footer{
+
+    background-color: #27afa3ff;
+    min-width: 587px;
+}
+
+nav{
+    background-color: #27afa3ff;
+}
+
+

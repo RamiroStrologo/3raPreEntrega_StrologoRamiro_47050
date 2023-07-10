@@ -6,23 +6,21 @@
 }
 
 body{
-
-    min-width: 587px;
+    height: 100vh;
 }
 header{
 
     background-color: #27afa3ff;
-    min-width: 587px;
+
 }
 main{
 
     background-color: #faefa0ff;
-    min-width: 587px;
 }
 footer{
 
     background-color: #27afa3ff;
-    min-width: 587px;
+  
 }
 
 nav{

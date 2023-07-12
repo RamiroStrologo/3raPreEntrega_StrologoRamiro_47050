@@ -2,6 +2,7 @@
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
+    font-family: 'Rubik', sans-serif;
 
 }
 
@@ -22,9 +23,21 @@ footer{
     background-color: #27afa3ff;
   
 }
+.p_about{
+    font-size: x-large !important;
+}
+
+@media (max-width: 576px){
+    .p_about{
+        font-size: small !important;
+    }
+}
+
 
 nav{
     background-color: #27afa3ff;
 }
+
+
 
 

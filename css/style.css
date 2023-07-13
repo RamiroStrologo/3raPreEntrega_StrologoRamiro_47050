@@ -30,6 +30,11 @@ nav{
 .p_about{
     font-size: x-large !important;
 }
+@media (max-width:991px){
+ #chat_container_inbox{
+    margin-right: 5px !important;
+ }
+}
 
 @media (max-width: 764px){
     .p_about{
@@ -40,7 +45,7 @@ nav{
         margin: 0px;
         padding-right: 2px !important;
         padding-left: 2px !important;
-        border-right: 1px solid !important;
+        
     }
     nav ul li a{
         margin-left: 5px !important;

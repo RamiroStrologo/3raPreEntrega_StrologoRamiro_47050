@@ -19,7 +19,7 @@ main{
     background-color: #faefa0ff;
 }
 footer{
-
+    margin-top: auto !important;
     background-color: #27afa3ff;
   
 }
@@ -45,6 +45,13 @@ nav{
     nav ul li a{
         margin-left: 5px !important;
         margin-right: 5px !important;
+        font-size: small !important;
+    }
+}
+
+@media (max-width: 767px){
+    #gow_img_about{
+      display: none !important;
     }
 }
 

@@ -23,20 +23,32 @@ footer{
     background-color: #27afa3ff;
   
 }
+nav{
+    background-color: #27afa3ff;
+}
+
 .p_about{
     font-size: x-large !important;
 }
 
-@media (max-width: 576px){
+@media (max-width: 764px){
     .p_about{
         font-size: small !important;
+    }
+    nav ul li{
+        text-align: center !important;
+        margin: 0px;
+        padding-right: 2px !important;
+        padding-left: 2px !important;
+        border-right: 1px solid !important;
+    }
+    nav ul li a{
+        margin-left: 5px !important;
+        margin-right: 5px !important;
     }
 }
 
 
-nav{
-    background-color: #27afa3ff;
-}
 
 
 

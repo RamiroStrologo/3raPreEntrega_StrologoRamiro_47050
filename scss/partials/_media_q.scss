@@ -1,0 +1,29 @@
+@media (max-width:991px){
+    #chat_container_inbox{
+       margin-right: 5px !important;
+    }
+   }
+   
+   @media (max-width: 764px){
+       .p_about{
+           font-size: small !important;
+       }
+       nav ul li{
+           text-align: center !important;
+           margin: 0px;
+           padding-right: 2px !important;
+           padding-left: 2px !important;
+           
+       }
+       nav ul li a{
+           margin-left: 5px !important;
+           margin-right: 1px !important;
+           font-size: small !important;
+       }
+   }
+   
+   @media (max-width: 767px){
+       #gow_img_about{
+         display: none !important;
+       }
+   }

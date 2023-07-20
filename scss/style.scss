@@ -1,0 +1,28 @@
+*{
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    font-family: 'Rubik', sans-serif;
+
+}
+body{
+    height: 100vh;
+    header{
+
+        background-color: #27afa3ff;
+    
+    }
+    main{
+
+        background-color: #faefa0ff;
+    }
+    footer{
+        margin-top: auto !important;
+        background-color: #27afa3ff;
+      
+    }
+    nav{
+        background-color: #27afa3ff;
+    }
+}
+@import "./partials/media_q.scss";

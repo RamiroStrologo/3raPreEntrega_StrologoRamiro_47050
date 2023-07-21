@@ -3,18 +3,18 @@
   padding: 0 !important;
   box-sizing: border-box !important;
   font-family: "Rubik", sans-serif;
+  color: #E0E1DD;
 }
 
 body {
   height: 100% !important;
 }
 body header {
-  height: 35vh;
   background-color: #415A77;
 }
 body header div img {
   width: 100%;
-  height: auto;
+  height: 10%;
 }
 body header nav ul li {
   color: #E0E1DD;
@@ -25,11 +25,9 @@ body header nav ul li img {
   margin-right: 100px !important;
 }
 body main {
-  height: 55vh !important;
   background-color: #0d1b2a;
 }
 body footer {
-  height: 10hv;
   margin-top: auto !important;
   background-color: #415A77;
 }

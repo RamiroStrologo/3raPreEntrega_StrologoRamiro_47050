@@ -3,26 +3,26 @@
     padding: 0 !important;
     box-sizing: border-box !important;
     font-family: 'Rubik', sans-serif;
-
 }
 body{
     height: 100vh;
     header{
-
-        background-color: #27afa3ff;
-    
+        background-color: #415A77;   
     }
     main{
-
-        background-color: #faefa0ff;
+        background-color:  #0d1b2a;
     }
+
     footer{
         margin-top: auto !important;
-        background-color: #27afa3ff;
-      
+        background-color: #415A77;  
     }
     nav{
-        background-color: #27afa3ff;
+        background-color: #415A77;
     }
+    
 }
+@import "./partials/index";
 @import "./partials/media_q.scss";
+
+

@@ -5,17 +5,51 @@
     font-family: 'Rubik', sans-serif;
 }
 body{
-    height: 100vh;
+    height: 100% !important;
     header{
-        background-color: #415A77;   
+        height: 35vh;
+        background-color: #415A77;
+        div{
+            img{
+                width: 100%;
+                height:auto;
+            }
+        }   
+        nav{
+            ul{
+                li{
+                    color: #E0E1DD;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 100px !important;
+                    }
+                }
+            }
+        }
+        
     }
     main{
+        height: 55vh !important;
         background-color:  #0d1b2a;
     }
 
     footer{
+        height: 10hv;
         margin-top: auto !important;
         background-color: #415A77;  
+        nav{
+            ul{
+                li{
+                    color: #E0E1DD;
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 100px !important;
+                    }
+                }
+            }
+        }
     }
     nav{
         background-color: #415A77;

@@ -3,7 +3,8 @@
           height: 30vh;
           #h1_index{
             color: #E0E1DD !important;
-            font-size: 50px;
+            font-size: 70px;
+            font-family: 'Nosifer', cursive;
             opacity: 0; /* Inicialmente lo haremos invisible */
             transform: translateX(-100%); /* Empieza fuera de la pantalla a la izquierda */
             animation-name: slideInH1;

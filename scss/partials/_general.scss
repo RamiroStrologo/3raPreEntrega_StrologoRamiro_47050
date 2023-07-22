@@ -8,6 +8,7 @@
 body{
     height: 100% !important;
     header{   
+        border-bottom: 2px solid #1B263B !important;
         background-color: #415A77;
         div{
             img{
@@ -23,8 +24,13 @@ body{
                         width: 30px;
                         height: 30px;
                         margin-right: 100px !important;
+                        padding-bottom: 0px !important;
+                        transition: border-bottom 1s ease !important;
+                        &:hover{             
+                         border-bottom: 2px solid #E0E1DD;
+                        }
                     }
-                }
+                    }                 
             }
         }
         
@@ -36,6 +42,7 @@ body{
     footer{
         margin-top: auto !important;
         background-color: #415A77;  
+        border-top: 2px solid #1B263B !important;
         nav{
             ul{
                 li{

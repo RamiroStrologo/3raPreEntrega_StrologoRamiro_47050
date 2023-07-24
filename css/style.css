@@ -142,6 +142,19 @@ body nav {
   margin-top: 10px !important;
 }
 
+.h2_tienda {
+  background-color: #1B263B;
+  width: 100%;
+  border: 0.5px solid #E0E1DD;
+}
+
+.button_tienda_filtro {
+  height: 100%;
+  width: 100%;
+  padding: 10px !important;
+  background-color: #415A77;
+}
+
 @media (max-width: 991px) {
   #chat_container_inbox {
     margin-right: 5px !important;

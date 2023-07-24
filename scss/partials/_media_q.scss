@@ -3,6 +3,27 @@
        margin-right: 5px !important;
     }
    }
+   @media (max-width: 857px){
+    footer{
+        div{
+            nav{
+                justify-content: center;
+               #div_foot_A{
+                display: flex;
+                justify-content: center;
+                  margin-top: 5px !important;
+                  ul{
+                    li{
+                        border-left: 0px !important;
+                        border-right: none !important;
+                    }
+                  }
+               }
+            }
+        }
+    }
+   }
+
    
    @media (max-width: 764px){
        .p_about{
@@ -18,7 +39,7 @@
        nav ul li a{
            margin-left: 5px !important;
            margin-right: 1px !important;
-           font-size: small !important;
+        //    font-size: small !important;
        }
    }
    
@@ -27,3 +48,4 @@
          display: none !important;
        }
    }
+

@@ -3,13 +3,13 @@
     padding: 0 !important;
     box-sizing: border-box !important;
     font-family: 'Rubik', sans-serif;
-    color: #E0E1DD;;
+    color: $colorCinco;
 }
 body{
     height: 100% !important;
-    header{   
-        border-bottom: 2px solid #1B263B !important;
-        background-color: #415A77;
+    .header_grl{   
+        border-bottom: 2px solid $colorDos !important;
+        background-color: $colorTres;
         div{
             img{
                 width: 100%;
@@ -19,7 +19,7 @@ body{
         nav{
             ul{
                 li{
-                    color: #E0E1DD;
+                    color: $colorCinco;
                     img{
                         width: 30px;
                         height: 30px;
@@ -27,7 +27,7 @@ body{
                         padding-bottom: 0px !important;
                         transition: border-bottom 1s ease !important;
                         &:hover{             
-                         border-bottom: 2px solid #E0E1DD;
+                         border-bottom: 2px solid $colorCinco;
                         }
                     }
                  }                 
@@ -35,31 +35,31 @@ body{
         }      
     }
     main{
-        background-color:  #0d1b2a;
+        background-color: $colorUno;
     }
 
     footer{
         margin-top: auto !important;
-        background-color: #415A77;  
-        border-top: 2px solid #1B263B !important;
+        background-color: $colorTres;  
+        border-top: 2px solid $colorDos !important;
         nav{
             ul{
                 li{
-                    color: #E0E1DD;
+                    color: $colorCinco;
                     img{
                         width: 30px;
                         height: 30px;
                         margin-right: 40px !important;
                     }
                     a{
-                        color: #E0E1DD !important;
+                        color: $colorCinco !important;
                     }
                 }
             }
         }
     }
     nav{
-        background-color: #415A77;
+        background-color: $colorTres;
     }
     
 }

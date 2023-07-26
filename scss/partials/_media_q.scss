@@ -1,9 +1,11 @@
+//RESPONSIVE INBOX
 @media (max-width:991px){
     #chat_container_inbox{
        margin-right: 5px !important;
     }
    }
-   @media (max-width: 857px){
+   //RESPONSIVE FOOTER
+   @media (max-width: 992px){
     footer{
         div{
             nav{
@@ -20,32 +22,66 @@
                   }
                }
             }
+            #div_foot_C{
+                display: flex !important;
+                justify-content: center !important;
+                ul{
+                    display: flex !important;
+                    justify-content: center !important;
+                }
+            }
         }
     }
    }
 
-   
+   //RESPONSIVE ABOUT
    @media (max-width: 764px){
        .p_about{
            font-size: small !important;
        }
-       nav ul li{
-           text-align: center !important;
-           margin: 0px;
-           padding-right: 2px !important;
-           padding-left: 2px !important;
-           
-       }
-       nav ul li a{
-           margin-left: 5px !important;
-           margin-right: 1px !important;
-        //    font-size: small !important;
-       }
    }
    
    @media (max-width: 767px){
+    //RESPONSIVE ABOUT
        #gow_img_about{
          display: none !important;
        }
+       //RESPONSIVE DEL HEADER: GENERAL
+       body{
+        .header_grl{
+            nav{
+                ul{
+                    li{
+                        img{
+                            margin-right: 50px !important;
+                        }
+                    }
+                }
+            }
+        }
+       }
+       
    }
+   //RESPONSIVE TIENDA
+@media (max-width: 576px){
+    #nav_tienda{
+        .li_tienda_menu{
+            display: none;
+        }
+        &:hover{
+            .li_tienda_menu{
+                display: flex;
+            }
+        }
+    }
+    #section_juegos_tienda{
+        article{
+            div{
+                justify-content: center !important;
+            }
+        }
+    }
+
+}
+
 

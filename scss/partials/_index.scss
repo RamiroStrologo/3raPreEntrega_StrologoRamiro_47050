@@ -2,7 +2,7 @@
 #div_index_title{
           height: 30vh;
           #h1_index{
-            color: #E0E1DD !important;
+            color: $colorCinco !important;
             font-size: 70px;
             font-family: 'Nosifer', cursive;
             opacity: 0; /* Inicialmente lo haremos invisible */
@@ -16,7 +16,7 @@
         }
     }  
 #div_index_link{
-            border: 3px #E0E1DD solid;
+            border: 3px $colorCinco solid;
             height: 70vh;
             margin-bottom: 30px !important;
             a{

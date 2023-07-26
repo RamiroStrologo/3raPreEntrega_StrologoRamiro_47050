@@ -203,6 +203,9 @@ body nav {
   #gow_img_about {
     display: none !important;
   }
+  .footer_grl {
+    height: 100%;
+  }
   body .header_grl nav ul li img {
     margin-right: 50px !important;
   }

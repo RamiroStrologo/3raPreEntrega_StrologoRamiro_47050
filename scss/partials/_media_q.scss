@@ -70,7 +70,7 @@
         }
         &:hover{
             .li_tienda_menu{
-                display: flex;
+                display:block;
             }
         }
     }
@@ -95,8 +95,21 @@
                     }
                 }
             }
-           }
-
+       }
+       #h1_index{
+        margin-left: 50px !important;
+    }
+         //RESPONSIVE FOOTER EN PANTALLAS MAS PEQUEÑAS
+         @include footer-low-sizes;
 }
+
+@media (max-width: 360px){
+    #h1_index{
+        margin-left: 50px !important;
+    }
+    @include footer-low-sizes;
+}
+
+
 
 

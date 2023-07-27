@@ -1,9 +1,4 @@
-//RESPONSIVE INBOX
-@media (max-width:991px){
-    #chat_container_inbox{
-       margin-right: 5px !important;
-    }
-   }
+
    //RESPONSIVE FOOTER
    @media (max-width: 992px){
     .footer_grl{
@@ -32,41 +27,43 @@
             }
         }
     }
+    //RESPONSIVE DE INBOX
+    #chat_container_inbox{
+        margin-right: 5px !important;
+     }
    }
 
-   //RESPONSIVE ABOUT
-   @media (max-width: 764px){
+
+   @media (max-width: 768px){
+       //RESPONSIVE ABOUT
        .p_about{
            font-size: small !important;
        }
+       #gow_img_about{
+        display: none !important;
+      }
+      .footer_grl{
+       height: 100%;
+      }
+      //RESPONSIVE DEL HEADER: GENERAL
+      body{
+       .header_grl{
+           nav{
+               ul{
+                   li{
+                       img{
+                           margin-right: 50px !important;
+                       }
+                   }
+               }
+           }
+       }
+      }
    }
    
-   @media (max-width: 767px){
-    //RESPONSIVE ABOUT
-       #gow_img_about{
-         display: none !important;
-       }
-       .footer_grl{
-        height: 100%;
-       }
-       //RESPONSIVE DEL HEADER: GENERAL
-       body{
-        .header_grl{
-            nav{
-                ul{
-                    li{
-                        img{
-                            margin-right: 50px !important;
-                        }
-                    }
-                }
-            }
-        }
-       }
-       
-   }
-   //RESPONSIVE TIENDA
-@media (max-width: 576px){
+
+@media (max-width: 413px){
+       //RESPONSIVE TIENDA
     #nav_tienda{
         .li_tienda_menu{
             display: none;
@@ -84,6 +81,21 @@
             }
         }
     }
+    //RESPONSIVE HEADER: GENERAL
+         //RESPONSIVE DEL HEADER: GENERAL
+         body{
+            .header_grl{
+                nav{
+                    ul{
+                        li{
+                            img{
+                                margin-right: 20px !important;
+                            }
+                        }
+                    }
+                }
+            }
+           }
 
 }
 

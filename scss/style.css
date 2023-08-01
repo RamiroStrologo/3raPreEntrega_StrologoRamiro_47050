@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100vh !important;
+  height: 100% !important;
 }
 body .header_grl {
   border-bottom: 2px solid #1B263B !important;
@@ -167,63 +167,155 @@ body nav {
   height: 30px !important;
 }
 
+.div_border_loginup {
+  border: 3px solid #E0E1DD;
+  border-radius: 15%;
+}
+
 @media (max-width: 992px) {
-  body {
-    height: 100vh;
-  }
-  body .footer_grl div nav {
+  .footer_grl div nav {
     justify-content: center;
   }
-  body .footer_grl div nav #div_foot_A {
+  .footer_grl div nav #div_foot_A {
     display: flex;
     justify-content: center;
     margin-top: 5px !important;
   }
-  body .footer_grl div nav #div_foot_A ul li {
+  .footer_grl div nav #div_foot_A ul li {
     border-left: 0px !important;
     border-right: none !important;
   }
-  body .footer_grl div #div_foot_C {
+  .footer_grl div #div_foot_C {
     display: flex !important;
     justify-content: center !important;
   }
-  body .footer_grl div #div_foot_C ul {
+  .footer_grl div #div_foot_C ul {
     display: flex !important;
     justify-content: center !important;
   }
-  body #chat_container_inbox {
+  #chat_container_inbox {
     margin-right: 5px !important;
   }
 }
 @media (max-width: 768px) {
-  body {
-    height: 100vh;
+  #div_index_title {
+    justify-content: center !important;
   }
-  body .p_about {
+  #div_index_title #h1_index {
+    margin-left: 50px !important;
+  }
+  .p_about {
     font-size: small !important;
   }
-  body #gow_img_about {
+  #gow_img_about {
     display: none !important;
   }
-  body .footer_grl {
-    height: 100vh;
+  .footer_grl {
+    height: 100%;
   }
   body .header_grl nav ul li img {
     margin-right: 50px !important;
   }
 }
 @media (max-width: 413px) {
+  #div_index_title {
+    justify-content: center !important;
+  }
+  #div_index_title #h1_index {
+    margin-left: 50px !important;
+  }
   #nav_tienda .li_tienda_menu {
     display: none;
   }
   #nav_tienda:hover .li_tienda_menu {
-    display: flex;
+    display: block;
   }
   #section_juegos_tienda article div {
     justify-content: center !important;
   }
   body .header_grl nav ul li img {
     margin-right: 20px !important;
+  }
+  #h1_index {
+    margin-left: 50px !important;
+  }
+  .footer_grl div nav {
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  .footer_grl div nav #div_foot_A {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px !important;
+  }
+  .footer_grl div nav #div_foot_A ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer_grl div nav #div_foot_A ul li {
+    border-left: 0px !important;
+    border-right: none !important;
+    margin: 0px !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+  .footer_grl div #div_foot_C {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .footer_grl div #div_foot_C ul {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .footer_grl div #div_foot_C ul li {
+    margin: 0px !important;
+  }
+  .footer_grl div #div_foot_C ul li a img {
+    margin-left: 5px !important;
+  }
+}
+@media (max-width: 360px) {
+  #div_index_title {
+    justify-content: center !important;
+  }
+  #div_index_title #h1_index {
+    margin-left: 50px !important;
+  }
+  .footer_grl div nav {
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  .footer_grl div nav #div_foot_A {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px !important;
+  }
+  .footer_grl div nav #div_foot_A ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer_grl div nav #div_foot_A ul li {
+    border-left: 0px !important;
+    border-right: none !important;
+    margin: 0px !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+  .footer_grl div #div_foot_C {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .footer_grl div #div_foot_C ul {
+    display: flex !important;
+    justify-content: center !important;
+  }
+  .footer_grl div #div_foot_C ul li {
+    margin: 0px !important;
+  }
+  .footer_grl div #div_foot_C ul li a img {
+    margin-left: 5px !important;
   }
 }
 

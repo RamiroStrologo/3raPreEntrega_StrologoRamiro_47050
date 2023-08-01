@@ -41,7 +41,14 @@
    @media (max-width: 768px){
     body{
         height: 100vh;
-       //RESPONSIVE ABOUT
+    #div_index_title{
+        justify-content: center !important;
+        //h1 del index centrado
+        #h1_index{
+            margin-left: 50px !important;
+        }
+    }
+    //RESPONSIVE ABOUT
        .p_about{
            font-size: small !important;
        }
@@ -69,6 +76,13 @@
    
 
 @media (max-width: 413px){
+    #div_index_title{
+        justify-content: center !important;
+        //h1 del index centrado
+        #h1_index{
+            margin-left: 50px !important;
+        }
+    }
        //RESPONSIVE TIENDA
     #nav_tienda{
         .li_tienda_menu{
@@ -76,7 +90,7 @@
         }
         &:hover{
             .li_tienda_menu{
-                display: flex;
+                display:block;
             }
         }
     }
@@ -101,8 +115,25 @@
                     }
                 }
             }
-           }
-
+       }
+       #h1_index{
+        margin-left: 50px !important;
+    }
+         //RESPONSIVE FOOTER EN PANTALLAS MAS PEQUEÑAS
+         @include footer-low-sizes;
 }
+
+@media (max-width: 360px){
+    #div_index_title{
+        justify-content: center !important;
+        //h1 del index centrado
+        #h1_index{
+            margin-left: 50px !important;
+        }
+    }
+    @include footer-low-sizes;
+}
+
+
 
 

@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100% !important;
+  height: 100vh !important;
 }
 body .header_grl {
   border-bottom: 2px solid #1B263B !important;
@@ -167,50 +167,52 @@ body nav {
   height: 30px !important;
 }
 
-@media (max-width: 991px) {
-  #chat_container_inbox {
-    margin-right: 5px !important;
-  }
-}
 @media (max-width: 992px) {
-  .footer_grl div nav {
+  body {
+    height: 100vh;
+  }
+  body .footer_grl div nav {
     justify-content: center;
   }
-  .footer_grl div nav #div_foot_A {
+  body .footer_grl div nav #div_foot_A {
     display: flex;
     justify-content: center;
     margin-top: 5px !important;
   }
-  .footer_grl div nav #div_foot_A ul li {
+  body .footer_grl div nav #div_foot_A ul li {
     border-left: 0px !important;
     border-right: none !important;
   }
-  .footer_grl div #div_foot_C {
+  body .footer_grl div #div_foot_C {
     display: flex !important;
     justify-content: center !important;
   }
-  .footer_grl div #div_foot_C ul {
+  body .footer_grl div #div_foot_C ul {
     display: flex !important;
     justify-content: center !important;
+  }
+  body #chat_container_inbox {
+    margin-right: 5px !important;
   }
 }
-@media (max-width: 764px) {
-  .p_about {
+@media (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  body .p_about {
     font-size: small !important;
   }
-}
-@media (max-width: 767px) {
-  #gow_img_about {
+  body #gow_img_about {
     display: none !important;
   }
-  .footer_grl {
-    height: 100%;
+  body .footer_grl {
+    height: 100vh;
   }
   body .header_grl nav ul li img {
     margin-right: 50px !important;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 413px) {
   #nav_tienda .li_tienda_menu {
     display: none;
   }
@@ -219,6 +221,9 @@ body nav {
   }
   #section_juegos_tienda article div {
     justify-content: center !important;
+  }
+  body .header_grl nav ul li img {
+    margin-right: 20px !important;
   }
 }
 

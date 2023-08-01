@@ -193,12 +193,6 @@ body nav {
   }
 }
 @media (max-width: 768px) {
-  #div_index_title {
-    justify-content: center !important;
-  }
-  #div_index_title #h1_index {
-    margin-left: 50px !important;
-  }
   .p_about {
     font-size: small !important;
   }
@@ -213,12 +207,6 @@ body nav {
   }
 }
 @media (max-width: 413px) {
-  #div_index_title {
-    justify-content: center !important;
-  }
-  #div_index_title #h1_index {
-    margin-left: 50px !important;
-  }
   #nav_tienda .li_tienda_menu {
     display: none;
   }
@@ -271,10 +259,7 @@ body nav {
   }
 }
 @media (max-width: 360px) {
-  #div_index_title {
-    justify-content: center !important;
-  }
-  #div_index_title #h1_index {
+  #h1_index {
     margin-left: 50px !important;
   }
   .footer_grl div nav {

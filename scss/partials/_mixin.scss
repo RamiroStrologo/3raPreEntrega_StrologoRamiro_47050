@@ -42,3 +42,15 @@
         }
     }
 }
+
+@mixin location{
+    .div_about_loc{
+        margin-left: 70px !important;
+      }
+      #location_map{
+        margin-left: 70px !important;
+        iframe{
+            width: 300px;
+        }
+      }
+}

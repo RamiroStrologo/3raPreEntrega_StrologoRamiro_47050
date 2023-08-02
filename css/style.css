@@ -8,6 +8,7 @@
 
 body {
   height: 100vh !important;
+  width: 100vw;
 }
 body .header_grl {
   border-bottom: 2px solid #1B263B !important;
@@ -207,6 +208,15 @@ body nav {
   body #chat_container_inbox {
     margin-right: 5px !important;
   }
+  body .div_about_loc {
+    margin-left: 70px !important;
+  }
+  body #location_map {
+    margin-left: 70px !important;
+  }
+  body #location_map iframe {
+    width: 300px;
+  }
 }
 @media (max-width: 768px) {
   body {
@@ -224,11 +234,31 @@ body nav {
   body .footer_grl {
     height: 100vh;
   }
+  body .div_about_loc {
+    margin-left: 70px !important;
+  }
+  body #location_map {
+    margin-left: 70px !important;
+  }
+  body #location_map iframe {
+    width: 300px;
+  }
   body .header_grl nav ul li img {
     margin-right: 50px !important;
   }
 }
-@media (max-width: 413px) {
+@media (max-width: 540px) {
+  .div_about_loc {
+    margin-left: 70px !important;
+  }
+  #location_map {
+    margin-left: 70px !important;
+  }
+  #location_map iframe {
+    width: 300px;
+  }
+}
+@media (max-width: 415px) {
   #div_index_title {
     justify-content: center !important;
   }
@@ -244,8 +274,13 @@ body nav {
   #section_juegos_tienda article div {
     justify-content: center !important;
   }
+  body .header_grl nav ul {
+    justify-content: center !important;
+  }
   body .header_grl nav ul li img {
-    margin-right: 20px !important;
+    margin-right: 10px !important;
+    width: 25px !important;
+    height: 25px !important;
   }
   #h1_index {
     margin-left: 50px !important;

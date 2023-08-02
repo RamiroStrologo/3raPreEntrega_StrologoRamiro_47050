@@ -33,6 +33,8 @@
         #chat_container_inbox{
             margin-right: 5px !important;
          }
+          //RESPONSIVE LOCATION
+      @include location;
     }
     
    }
@@ -55,8 +57,9 @@
       .footer_grl{
        height: 100vh;
       }
+      //RESPONSIVE LOCATION
+      @include location;
       //RESPONSIVE DEL HEADER: GENERAL
-
        .header_grl{
            nav{
                ul{
@@ -70,9 +73,12 @@
        }
       }
    }
-   
+   @media (max-width: 540px){
+    //RESPONSIVE LOCATION
+    @include location;
+   }
 
-@media (max-width: 413px){
+@media (max-width: 415px){
     #div_index_title{
         justify-content: center !important;
         //h1 del index centrado
@@ -104,9 +110,12 @@
             .header_grl{
                 nav{
                     ul{
+                        justify-content: center !important;
                         li{
                             img{
-                                margin-right: 20px !important;
+                                margin-right: 10px !important;
+                                width: 25px !important;
+                                height: 25px !important;
                             }
                         }
                     }

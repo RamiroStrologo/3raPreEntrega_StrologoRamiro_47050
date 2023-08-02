@@ -7,7 +7,7 @@
 }
 
 body {
-  height: 100% !important;
+  height: 100vh !important;
 }
 body .header_grl {
   border-bottom: 2px solid #1B263B !important;
@@ -21,8 +21,8 @@ body .header_grl nav ul li {
   color: #E0E1DD;
 }
 body .header_grl nav ul li img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   margin-right: 100px !important;
   padding-bottom: 0px !important;
   transition: border-bottom 1s ease !important;
@@ -172,46 +172,57 @@ body nav {
   border-radius: 15%;
 }
 
+.div_about_loc img {
+  width: 30px !important;
+  height: 30px !important;
+}
+.div_about_loc p {
+  font-size: medium !important;
+}
+
 @media (max-width: 992px) {
-  .footer_grl div nav {
+  body {
+    height: 100vh;
+  }
+  body .footer_grl div nav {
     justify-content: center;
   }
-  .footer_grl div nav #div_foot_A {
+  body .footer_grl div nav #div_foot_A {
     display: flex;
     justify-content: center;
     margin-top: 5px !important;
   }
-  .footer_grl div nav #div_foot_A ul li {
+  body .footer_grl div nav #div_foot_A ul li {
     border-left: 0px !important;
     border-right: none !important;
   }
-  .footer_grl div #div_foot_C {
+  body .footer_grl div #div_foot_C {
     display: flex !important;
     justify-content: center !important;
   }
-  .footer_grl div #div_foot_C ul {
+  body .footer_grl div #div_foot_C ul {
     display: flex !important;
     justify-content: center !important;
   }
-  #chat_container_inbox {
+  body #chat_container_inbox {
     margin-right: 5px !important;
   }
 }
 @media (max-width: 768px) {
-  #div_index_title {
+  body {
+    height: 100vh;
+  }
+  body #div_index_title {
     justify-content: center !important;
   }
-  #div_index_title #h1_index {
+  body #div_index_title #h1_index {
     margin-left: 50px !important;
   }
-  .p_about {
+  body .p_about {
     font-size: small !important;
   }
-  #gow_img_about {
-    display: none !important;
-  }
-  .footer_grl {
-    height: 100%;
+  body .footer_grl {
+    height: 100vh;
   }
   body .header_grl nav ul li img {
     margin-right: 50px !important;

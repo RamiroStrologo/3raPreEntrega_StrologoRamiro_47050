@@ -54,9 +54,6 @@
        .p_about{
            font-size: small !important;
        }
-      .footer_grl{
-       height: 100vh;
-      }
       //RESPONSIVE LOCATION
       @include location;
       //RESPONSIVE DEL HEADER: GENERAL
@@ -103,6 +100,9 @@
                 justify-content: center !important;
             }
         }
+    }
+    .div_loc_ref{
+        flex-direction: column !important;
     }
     //RESPONSIVE HEADER: GENERAL
          //RESPONSIVE DEL HEADER: GENERAL

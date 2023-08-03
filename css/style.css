@@ -8,7 +8,6 @@
 
 body {
   height: 100vh !important;
-  width: 100vw;
 }
 body .header_grl {
   border-bottom: 2px solid #1B263B !important;
@@ -162,11 +161,16 @@ body nav {
   transition: transform 0.3s, box-shadow 0.3s;
   transform-origin: center;
 }
+.div_img_tienda p {
+  display: none;
+}
 .div_img_tienda:hover {
   width: 200px !important;
   transform: scale(1.1);
   box-shadow: 0 0 20px #E0E1DD;
   transition: transform 0.8s, box-shadow 0.5s;
+  position: sticky;
+  z-index: 1;
 }
 .div_img_tienda:hover p {
   word-wrap: break-word;
@@ -174,9 +178,6 @@ body nav {
   margin-left: 10px !important;
   display: inline;
   font-size: small;
-}
-.div_img_tienda p {
-  display: none;
 }
 
 #div_aside_tienda {
@@ -254,9 +255,6 @@ body nav {
   body .p_about {
     font-size: small !important;
   }
-  body .footer_grl {
-    height: 100vh;
-  }
   body .div_about_loc {
     margin-left: 70px !important;
   }
@@ -296,6 +294,9 @@ body nav {
   }
   #section_juegos_tienda article div {
     justify-content: center !important;
+  }
+  .div_loc_ref {
+    flex-direction: column !important;
   }
   body .header_grl nav ul {
     justify-content: center !important;

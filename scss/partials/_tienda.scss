@@ -20,11 +20,16 @@
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     transform-origin: center;
+    p {
+        display: none;
+    }
     &:hover {
         width: 200px !important;
         transform: scale(1.1);
         box-shadow: 0 0 20px $colorCinco;
         transition: transform 0.8s, box-shadow 0.5s;
+        position:sticky; 
+        z-index: 1; 
         p {
             word-wrap: break-word; 
             white-space: pre-wrap; 
@@ -34,9 +39,7 @@
         }
        
     }
-    p {
-        display: none;
-    }
+ 
 }
 
 #div_aside_tienda{

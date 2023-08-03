@@ -139,8 +139,6 @@ body nav {
 .img_portadas {
   width: 200px !important;
   height: 300px !important;
-  margin-bottom: 10px !important;
-  margin-top: 10px !important;
 }
 
 .h2_tienda {
@@ -157,16 +155,25 @@ body nav {
 }
 
 .div_img_tienda {
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+  background-color: #1B263B;
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  transform-origin: center;
 }
 .div_img_tienda:hover {
+  width: 200px !important;
   transform: scale(1.1);
   box-shadow: 0 0 20px #E0E1DD;
   transition: transform 0.8s, box-shadow 0.5s;
 }
 .div_img_tienda:hover p {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  margin-left: 10px !important;
   display: inline;
+  font-size: small;
 }
 .div_img_tienda p {
   display: none;

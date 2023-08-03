@@ -1,8 +1,6 @@
 .img_portadas{
     width: 200px !important;
     height: 300px !important;
-    margin-bottom: 10px !important;
-    margin-top: 10px !important;
 }
 .h2_tienda{
     background-color: $colorDos;
@@ -15,18 +13,28 @@
     padding: 10px !important;
     background-color: $colorTres;
 }
-.div_img_tienda{
+.div_img_tienda {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
+    background-color: $colorDos;
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
-    &:hover{
+    transform-origin: center;
+    &:hover {
+        width: 200px !important;
         transform: scale(1.1);
         box-shadow: 0 0 20px $colorCinco;
         transition: transform 0.8s, box-shadow 0.5s;
-        p{
+        p {
+            word-wrap: break-word; 
+            white-space: pre-wrap; 
+            margin-left: 10px !important;
             display: inline;
+            font-size:small ;
         }
+       
     }
-    p{
+    p {
         display: none;
     }
 }

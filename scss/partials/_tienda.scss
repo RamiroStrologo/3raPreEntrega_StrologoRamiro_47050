@@ -19,8 +19,15 @@
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     &:hover{
-        transform: scale(1.1); /* Aumentar el tamaño en un 10% */
-        box-shadow: 0 0 20px $colorCinco /* Agregar una sombra con efecto de iluminación */
+        transform: scale(1.1);
+        box-shadow: 0 0 20px $colorCinco;
+        transition: transform 0.8s, box-shadow 0.5s;
+        p{
+            display: inline;
+        }
+    }
+    p{
+        display: none;
     }
 }
 

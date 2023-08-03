@@ -15,6 +15,14 @@
     padding: 10px !important;
     background-color: $colorTres;
 }
+.div_img_tienda{
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    &:hover{
+        transform: scale(1.1); /* Aumentar el tamaño en un 10% */
+        box-shadow: 0 0 20px $colorCinco /* Agregar una sombra con efecto de iluminación */
+    }
+}
 
 #div_aside_tienda{
     background-color: $colorTres;

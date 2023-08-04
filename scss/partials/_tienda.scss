@@ -13,7 +13,18 @@
     padding: 10px !important;
     background-color: $colorTres;
 }
-
+#ps4_games{
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+#ps3_games{
+    @extend #ps4_games;
+}
+#xone_games{
+    @extend #ps4_games;
+}
 .contenedor_portadas_tienda{
     margin-left: 30px !important;
     margin-right: 30px !important;

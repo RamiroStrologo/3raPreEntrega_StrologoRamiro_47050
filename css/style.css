@@ -153,7 +153,11 @@ body nav {
   background-color: #415A77;
 }
 
-.div_img_tienda {
+.contenedor_portadas_tienda {
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+}
+.contenedor_portadas_tienda .div_img_tienda {
   margin-bottom: 10px !important;
   margin-top: 10px !important;
   background-color: #1B263B;
@@ -161,10 +165,10 @@ body nav {
   transition: transform 0.3s, box-shadow 0.3s;
   transform-origin: center;
 }
-.div_img_tienda p {
+.contenedor_portadas_tienda .div_img_tienda p {
   display: none;
 }
-.div_img_tienda:hover {
+.contenedor_portadas_tienda .div_img_tienda:hover {
   width: 200px !important;
   transform: scale(1.1);
   box-shadow: 0 0 20px #E0E1DD;
@@ -172,7 +176,7 @@ body nav {
   position: sticky;
   z-index: 1;
 }
-.div_img_tienda:hover p {
+.contenedor_portadas_tienda .div_img_tienda:hover p {
   word-wrap: break-word;
   white-space: pre-wrap;
   margin-left: 10px !important;

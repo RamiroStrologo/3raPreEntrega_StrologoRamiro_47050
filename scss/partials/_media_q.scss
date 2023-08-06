@@ -33,9 +33,23 @@
         #chat_container_inbox{
             margin-right: 5px !important;
          }
-          //RESPONSIVE LOCATION
+         //RESPONSIVE HEADER GENERAL
+         .header_grl{
+            nav{
+                ul{
+                    li{
+                        img{
+                            margin-right: 40px !important;
+                        }
+                    }
+                }
+            }
+        }
+    //RESPONSIVE LOCATION
       @include location;
     }
+    //RESPONSIVE DEL INDEX
+    @include index_size(150px, 70px);
     
    }
 
@@ -45,10 +59,6 @@
         height: 100vh;
     #div_index_title{
         justify-content: center !important;
-        //h1 del index centrado
-        #h1_index{
-            margin-left: 50px !important;
-        }
     }
     //RESPONSIVE ABOUT
        .p_about{
@@ -69,10 +79,13 @@
            }
        }
       }
+      @include index_size(120px, 50px);
    }
    @media (max-width: 540px){
     //RESPONSIVE LOCATION
     @include location;
+    //RESPONSIVE DEL INDEX
+    @include index_size(75px, 50px);
    }
 
 @media (max-width: 415px){
@@ -127,6 +140,8 @@
     }
          //RESPONSIVE FOOTER EN PANTALLAS MAS PEQUEÑAS
          @include footer-low-sizes;
+         //RESPONSIVE DEL INDEX
+         @include index_size(60px, 35px);
 }
 
 @media (max-width: 360px){
@@ -138,6 +153,8 @@
         }
     }
     @include footer-low-sizes;
+    //RESPONSIVE DEL INDEX
+    @include index_size(50px, 30px);
 }
 
 

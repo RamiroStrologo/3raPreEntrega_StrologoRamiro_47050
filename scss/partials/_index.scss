@@ -3,40 +3,70 @@
           height: 30vh;
           #h1_index{
             color: $colorCinco !important;
-            font-size: 70px;
+            font-size: 100px;
             font-family: 'Nosifer', cursive;
-            opacity: 0; /* Inicialmente lo haremos invisible */
-            transform: translateX(-100%); /* Empieza fuera de la pantalla a la izquierda */
-            animation-name: slideInH1;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation-name: fadeInH1;
             animation-iteration-count: 1;
-            animation-timing-function: linear;
-            animation-duration: 0.5s;
-            animation-delay: 0.1;
-            animation-fill-mode: forwards; 
+            animation-timing-function: ease-in-out;
+            animation-duration: 1s;
+            animation-delay: 0.1s;
+            animation-fill-mode: forwards;
         }
     }  
-#div_index_link{
-            border: 3px $colorCinco solid;
-            height: 70vh;
+#div_index_linkB{
+            width: 15vw !important;
+            height: 30vh !important;
             margin-bottom: 30px !important;
             a{
-              height: 100% !important;
-                width: 100% !important;
+              height: 200px !important;
+                width: 200px !important;
               img{
-                height: 100% !important;
-                width: 100% !important;
+                height: 200px !important;
+                width: 200px !important;
               }
             }
-            transform: translateX(-100%); /* Empieza fuera de la pantalla a la izquierda */
-            animation-name: slideInLink;
+            transform: translateX(100%); /* Empieza fuera de la pantalla a la izquierda */
+            animation-name: slideInLinkB;
             animation-iteration-count: 1;
             animation-timing-function: linear;
             animation-duration: 0.5s;
             animation-delay: 0.1;
             animation-fill-mode: forwards;    
         }
+  #div_index_linkA{
+            width: 15vw !important;
+            height: 30vh;
+            margin-bottom: 30px !important;
+            a{
+              // height: 200px !important;
+              //   width: 200px !important;
+              img{
+                height: 200px !important;
+                width: 200px !important;
+            }
+            }
+            transform: translateX(-100%); /* Empieza fuera de la pantalla a la izquierda */
+            animation-name: slideInLinkA;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+            animation-duration: 0.5s;
+            animation-delay: 0.1;
+            animation-fill-mode: forwards;    
+     }
+     .a_ico_index{
+      overflow: hidden;
+        transition: transform 0.3s border-bottom 1s ease;
+        transform-origin: center;
+        &:hover{
+          transform: scale(1.1);
+          border-bottom: 2px solid $colorCinco;
+            transition: transform 0.8s, box-shadow 0.5s;
+        }
+     }
 
-        @keyframes slideInH1{
+        @keyframes slideInLinkA{
           0%{
             opacity: 0.2;
             transform: translateX(-100%);
@@ -55,10 +85,12 @@
           }
           100%{
             opacity: 1;
-            transform: translateX(0);
+            transform: translateX(-10%);
           }
         }
-        @keyframes slideInLink{
+     
+
+        @keyframes slideInLinkB{
           0%{
             opacity: 0.2;
             transform: translateX(100%);
@@ -77,7 +109,18 @@
           }
           100%{
             opacity: 1;
-            transform: translateX(0);
+            transform: translateX(10%);
+          }
+        }
+
+        @keyframes fadeInH1 {
+          0% {
+            opacity: 0;
+            transform: translateY(-20px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
           }
         }
 

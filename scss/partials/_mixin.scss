@@ -53,3 +53,25 @@
         }
       }
 }
+
+@mixin index_size($pxSVG, $fontSize){
+    #div_index_linkA{
+        a{
+          img{
+            height: $pxSVG !important;
+            width: $pxSVG !important;
+        }
+        } 
+ }
+ #div_index_linkB{
+    a{
+      img{
+        height: $pxSVG !important;
+        width: $pxSVG !important;
+      }
+    } 
+}
+#h1_index{
+    font-size: $fontSize !important;
+}
+}

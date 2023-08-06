@@ -1,10 +1,10 @@
 @import "./partials/variables";
 @import "./partials/mixin";
-@import "./partials/general";
-@import "./partials/index";
-@import "./partials/tienda";
-@import "./partials/loginup";
-@import "./partials/about";
+@import "./partials/layout/general";
+@import "./partials/pages/index";
+@import "./partials/pages/tienda";
+@import "./partials/pages/loginup";
+@import "./partials/pages/about";
 @import "./partials/media_q";
 
 

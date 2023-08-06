@@ -103,6 +103,10 @@ body nav {
   animation-delay: 0.1;
   animation-fill-mode: forwards;
 }
+#div_index_linkA a {
+  height: 200px !important;
+  width: 200px !important;
+}
 #div_index_linkA a img {
   height: 200px !important;
   width: 200px !important;
@@ -248,8 +252,14 @@ body nav {
   width: 30px !important;
   height: 30px !important;
 }
-.div_about_loc p {
-  font-size: medium !important;
+
+.p_about {
+  font-size: 23.7px !important;
+}
+
+#img_about {
+  width: auto !important;
+  height: 300px !important;
 }
 
 @media (max-width: 992px) {

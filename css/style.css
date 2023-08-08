@@ -5,10 +5,6 @@ body .header_grl {
   border-bottom: 2px solid #1B263B !important;
   background-color: #415A77;
 }
-body .header_grl div img {
-  width: 100%;
-  height: 10%;
-}
 body .header_grl nav ul li {
   color: #E0E1DD;
 }

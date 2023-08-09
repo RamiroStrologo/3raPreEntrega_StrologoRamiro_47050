@@ -28,18 +28,38 @@
             </div>
     </header>
         <main class="container-fluid">
-            <div class="row h-100 m-0 p-0">
+            <div class="row m-0 p-0">
                 <!-- //SECTION CONTIENE LA CAJA DE TEXTO DONDE SE ENVIARAN LOS MSJ -->
-                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 m-0 p-0">
+                <section class="col-sm-12 col-md-12 col-lg-6 col-xl-8 col-xxl-8 m-0 p-0">
                     <!-- //LA CLASE chat_container_inbox SE VE EN _media_q.scss media 992px  -->
-                      <div class="mb-3 flex-column align-items-start ms-3" id="chat_container_inbox">
-                        <label for="chat_inbox" class="form-label h2">Mensajes:</label>
-                        <textarea class="form-control" placeholder="Envianos un mensaje..." id="chat_inbox" rows="15"></textarea>
-                      </div>
+                    <div class="mt-5 ms-4 mb-5 d-flex justify-content-start">         
+                            <div class="card w-100">
+                              <div class="card-body">
+                                <div class="mb-4">
+                                  <div class="alert mb-3 output_message" role="alert">
+                                    Hola, ¿cómo estás?
+                                  </div>
+                                  <div class="alert alert-light mb-3 text-end input_message" role="alert">
+                                    Hola, estoy bien, ¿y tú?
+                                  </div>
+                                    <div class="alert mb-3 output_message" role="alert">
+                                        Queria consultarte sobre una reparación
+                                    </div>
+                                    <div class="alert alert-light mb-3 text-end input_message" role="alert">
+                                        Decime que consola y cual es el problema!
+                                    </div>
+                                    <div class="input-group mt-3">
+                                        <input type="text" class="form-control" placeholder="Escribe un mensaje...">
+                                        <button class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>
+                             </div>
+                         </div>
+                    </div>
                 </section>
                 <!-- //ASIDE CONTIENE TEXTO SUGESTIVO -->
-                <aside class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 m-0 p-0">
-                     <div class="d-flex flex-column align-items-star ms-3 mt-3">
+                <aside class="col-sm-12 col-md-12 col-lg-6 col-xl-4 col-xxl-4 m-0 p-0">
+                     <div class="d-flex flex-column align-items-star ms-3 mt-5">
                          <h2>Chatea con nosotros</h2>
                          <h3>Preguntanos sobre:</h3>
                          <ul class="ms-3">

@@ -2,3 +2,5 @@
     border: 3px solid $colorCinco;
     border-radius: 15%;
 }
+
+@include button_form;

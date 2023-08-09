@@ -236,6 +236,11 @@ body nav {
   border-radius: 15%;
 }
 
+.button_form {
+  color: #E0E1DD !important;
+  background-color: #778DA9 !important;
+}
+
 .div_about_loc img {
   width: 30px !important;
   height: 30px !important;
@@ -272,6 +277,34 @@ body nav {
   justify-content: center;
   margin-top: 30px !important;
   margin-bottom: 30px !important;
+}
+
+.card {
+  border: 0px !important;
+}
+.card .card-body {
+  background-color: #1B263B;
+}
+.card .card-body .input_message {
+  background-color: #778DA9;
+  color: #E0E1DD;
+  height: 35px;
+  margin-top: 25px !important;
+}
+.card .card-body .output_message {
+  background-color: #415A77;
+  color: #E0E1DD;
+  height: 35px;
+  margin-top: 25px !important;
+}
+.card .card-body .form-control {
+  background-color: #1B263B;
+  color: #E0E1DD;
+  border-color: #415A77;
+}
+.card .card-body .btn-primary {
+  background-color: #415A77;
+  border-color: #415A77;
 }
 
 @media (max-width: 360px) {

@@ -1,0 +1,28 @@
+.card{
+     border: 0px !important;   
+    .card-body{
+        background-color: $colorDos;
+
+            .input_message{
+                background-color: $colorCuatro;
+                color: $colorCinco;
+                height: 35px;
+                margin-top: 25px !important;
+            }
+            .output_message{
+                background-color: $colorTres;
+                color: $colorCinco;
+                height: 35px;
+                margin-top: 25px !important;
+            }
+            .form-control {
+                background-color: #1B263B;
+                color: #E0E1DD;
+                border-color: #415A77;
+            }
+            .btn-primary {
+                background-color: #415A77;
+                border-color: #415A77;
+            }
+        } 
+}

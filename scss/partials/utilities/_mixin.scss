@@ -75,3 +75,10 @@
     font-size: $fontSize !important;
 }
 }
+
+@mixin button_form{
+    .button_form{
+        color: #E0E1DD !important;
+        background-color: #778DA9 !important;
+    }
+}

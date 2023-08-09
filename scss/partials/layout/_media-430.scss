@@ -1,10 +1,6 @@
-@media (max-width: 415px){
+@media (max-width: 431px){
     #div_index_title{
         justify-content: center !important;
-        //h1 del index centrado
-        #h1_index{
-            margin-left: 50px !important;
-        }
     }
        //RESPONSIVE TIENDA
     #nav_tienda{
@@ -31,6 +27,16 @@
          //RESPONSIVE DEL HEADER: GENERAL
          body{
             .header_grl{
+                #banner_header{
+                 display: none !important;
+                }
+                #logo_header{
+                width: 100% !important;
+                height: 200px !important;
+                img{
+                    width: 100% !important;
+                }
+                }
                 nav{
                     ul{
                         justify-content: center !important;
@@ -45,11 +51,8 @@
                 }
             }
        }
-       #h1_index{
-        margin-left: 50px !important;
-    }
          //RESPONSIVE FOOTER EN PANTALLAS MAS PEQUEÑAS
          @include footer-low-sizes;
          //RESPONSIVE DEL INDEX
-         @include index_size(60px, 35px);
+         @include index_size(80px,42px);
 }

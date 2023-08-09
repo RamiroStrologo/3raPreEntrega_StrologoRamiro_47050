@@ -1,6 +1,5 @@
-@media (max-width: 768px){
+@media (max-width: 744px){
     body{
-        height: 100vh;
     #div_index_title{
         justify-content: center !important;
     }
@@ -23,5 +22,5 @@
            }
        }
       }
-      @include index_size(120px, 50px);
-   }
+      @include index_size(120px, 60px);
+}

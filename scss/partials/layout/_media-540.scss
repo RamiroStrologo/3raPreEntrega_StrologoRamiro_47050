@@ -1,0 +1,6 @@
+@media (max-width: 540px){
+    //RESPONSIVE LOCATION
+    @include location;
+    //RESPONSIVE DEL INDEX
+    @include index_size(75px, 50px);
+   }

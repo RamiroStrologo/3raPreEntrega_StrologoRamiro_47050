@@ -1,0 +1,54 @@
+
+   //RESPONSIVE FOOTER
+   @media (max-width: 992px){
+    body{
+        height: 100vh;
+        .footer_grl{
+            div{
+                nav{
+                    justify-content: center;
+                   #div_foot_A{
+                    display: flex;
+                    justify-content: center;
+                      margin-top: 5px !important;
+                      ul{
+                        li{
+                            border-left: 0px !important;
+                            border-right: none !important;
+                        }
+                      }
+                   }
+                }
+                #div_foot_C{
+                    display: flex !important;
+                    justify-content: center !important;
+                    ul{
+                        display: flex !important;
+                        justify-content: center !important;
+                    }
+                }
+            }
+        }
+        //RESPONSIVE DE INBOX
+        #chat_container_inbox{
+            margin-right: 5px !important;
+         }
+         //RESPONSIVE HEADER GENERAL
+         .header_grl{
+            nav{
+                ul{
+                    li{
+                        img{
+                            margin-right: 40px !important;
+                        }
+                    }
+                }
+            }
+        }
+    //RESPONSIVE LOCATION
+      @include location;
+    }
+    //RESPONSIVE DEL INDEX
+    @include index_size(150px, 70px);
+    
+   }

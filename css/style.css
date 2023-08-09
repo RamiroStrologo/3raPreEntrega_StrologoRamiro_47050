@@ -251,114 +251,81 @@ body nav {
 }
 
 #location_map {
+  margin-top: 50px !important;
   margin-right: 100px !important;
 }
 
-@media (max-width: 992px) {
-  body {
-    height: 100vh;
+.separador {
+  background-color: #415A77 !important;
+  width: 100% !important;
+  height: 30px !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+#about_text h1 {
+  text-align: center;
+}
+#about_text div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+@media (max-width: 360px) {
+  #div_index_title {
+    justify-content: center !important;
   }
-  body .footer_grl div nav {
-    justify-content: center;
+  #div_index_title #h1_index {
+    margin-left: 50px !important;
   }
-  body .footer_grl div nav #div_foot_A {
+  .footer_grl div nav {
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+  .footer_grl div nav #div_foot_A {
     display: flex;
     justify-content: center;
     margin-top: 5px !important;
   }
-  body .footer_grl div nav #div_foot_A ul li {
+  .footer_grl div nav #div_foot_A ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .footer_grl div nav #div_foot_A ul li {
     border-left: 0px !important;
     border-right: none !important;
+    margin: 0px !important;
+    padding-left: 48px !important;
+    padding-right: 48px !important;
   }
-  body .footer_grl div #div_foot_C {
+  .footer_grl div #div_foot_C {
     display: flex !important;
     justify-content: center !important;
   }
-  body .footer_grl div #div_foot_C ul {
+  .footer_grl div #div_foot_C ul {
     display: flex !important;
     justify-content: center !important;
   }
-  body #chat_container_inbox {
-    margin-right: 5px !important;
+  .footer_grl div #div_foot_C ul li {
+    margin: 0px !important;
   }
-  body .header_grl nav ul li img {
-    margin-right: 40px !important;
-  }
-  body .div_about_loc {
-    margin-left: 70px !important;
-  }
-  body #location_map {
-    margin-left: 70px !important;
-  }
-  body #location_map iframe {
-    width: 300px;
+  .footer_grl div #div_foot_C ul li a img {
+    margin-left: 5px !important;
   }
   #div_index_linkA a img {
-    height: 150px !important;
-    width: 150px !important;
+    height: 50px !important;
+    width: 50px !important;
   }
   #div_index_linkB a img {
-    height: 150px !important;
-    width: 150px !important;
+    height: 50px !important;
+    width: 50px !important;
   }
   #h1_index {
-    font-size: 70px !important;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    height: 100vh;
-  }
-  body #div_index_title {
-    justify-content: center !important;
-  }
-  body .p_about {
-    font-size: small !important;
-  }
-  body .div_about_loc {
-    margin-left: 70px !important;
-  }
-  body #location_map {
-    margin-left: 70px !important;
-  }
-  body #location_map iframe {
-    width: 300px;
-  }
-  body .header_grl nav ul li img {
-    margin-right: 50px !important;
-  }
-  #div_index_linkA a img {
-    height: 120px !important;
-    width: 120px !important;
-  }
-  #div_index_linkB a img {
-    height: 120px !important;
-    width: 120px !important;
-  }
-  #h1_index {
-    font-size: 50px !important;
-  }
-}
-@media (max-width: 540px) {
-  .div_about_loc {
-    margin-left: 70px !important;
-  }
-  #location_map {
-    margin-left: 70px !important;
-  }
-  #location_map iframe {
-    width: 300px;
-  }
-  #div_index_linkA a img {
-    height: 75px !important;
-    width: 75px !important;
-  }
-  #div_index_linkB a img {
-    height: 75px !important;
-    width: 75px !important;
-  }
-  #h1_index {
-    font-size: 50px !important;
+    font-size: 30px !important;
   }
 }
 @media (max-width: 415px) {
@@ -438,58 +405,111 @@ body nav {
     font-size: 35px !important;
   }
 }
-@media (max-width: 360px) {
-  #div_index_title {
+@media (max-width: 540px) {
+  .div_about_loc {
+    margin-left: 70px !important;
+  }
+  #location_map {
+    margin-left: 70px !important;
+  }
+  #location_map iframe {
+    width: 300px;
+  }
+  #div_index_linkA a img {
+    height: 75px !important;
+    width: 75px !important;
+  }
+  #div_index_linkB a img {
+    height: 75px !important;
+    width: 75px !important;
+  }
+  #h1_index {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    height: 100vh;
+  }
+  body #div_index_title {
     justify-content: center !important;
   }
-  #div_index_title #h1_index {
-    margin-left: 50px !important;
+  body .p_about {
+    font-size: small !important;
   }
-  .footer_grl div nav {
-    justify-content: center !important;
-    flex-direction: column !important;
+  body .div_about_loc {
+    margin-left: 70px !important;
   }
-  .footer_grl div nav #div_foot_A {
+  body #location_map {
+    margin-left: 70px !important;
+  }
+  body #location_map iframe {
+    width: 300px;
+  }
+  body .header_grl nav ul li img {
+    margin-right: 50px !important;
+  }
+  #div_index_linkA a img {
+    height: 120px !important;
+    width: 120px !important;
+  }
+  #div_index_linkB a img {
+    height: 120px !important;
+    width: 120px !important;
+  }
+  #h1_index {
+    font-size: 50px !important;
+  }
+}
+@media (max-width: 992px) {
+  body {
+    height: 100vh;
+  }
+  body .footer_grl div nav {
+    justify-content: center;
+  }
+  body .footer_grl div nav #div_foot_A {
     display: flex;
     justify-content: center;
     margin-top: 5px !important;
   }
-  .footer_grl div nav #div_foot_A ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-  }
-  .footer_grl div nav #div_foot_A ul li {
+  body .footer_grl div nav #div_foot_A ul li {
     border-left: 0px !important;
     border-right: none !important;
-    margin: 0px !important;
-    padding-left: 48px !important;
-    padding-right: 48px !important;
   }
-  .footer_grl div #div_foot_C {
+  body .footer_grl div #div_foot_C {
     display: flex !important;
     justify-content: center !important;
   }
-  .footer_grl div #div_foot_C ul {
+  body .footer_grl div #div_foot_C ul {
     display: flex !important;
     justify-content: center !important;
   }
-  .footer_grl div #div_foot_C ul li {
-    margin: 0px !important;
+  body #chat_container_inbox {
+    margin-right: 5px !important;
   }
-  .footer_grl div #div_foot_C ul li a img {
-    margin-left: 5px !important;
+  body .header_grl nav ul li img {
+    margin-right: 40px !important;
+  }
+  body .div_about_loc {
+    margin-left: 70px !important;
+  }
+  body #location_map {
+    margin-left: 70px !important;
+  }
+  body #location_map iframe {
+    width: 300px;
   }
   #div_index_linkA a img {
-    height: 50px !important;
-    width: 50px !important;
+    height: 150px !important;
+    width: 150px !important;
   }
   #div_index_linkB a img {
-    height: 50px !important;
-    width: 50px !important;
+    height: 150px !important;
+    width: 150px !important;
   }
   #h1_index {
-    font-size: 30px !important;
+    font-size: 70px !important;
   }
 }
 * {

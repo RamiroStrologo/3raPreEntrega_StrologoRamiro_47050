@@ -1,0 +1,55 @@
+@media (max-width: 415px){
+    #div_index_title{
+        justify-content: center !important;
+        //h1 del index centrado
+        #h1_index{
+            margin-left: 50px !important;
+        }
+    }
+       //RESPONSIVE TIENDA
+    #nav_tienda{
+        .li_tienda_menu{
+            display: none;
+        }
+        &:hover{
+            .li_tienda_menu{
+                display:block;
+            }
+        }
+    }
+    #section_juegos_tienda{
+        article{
+            div{
+                justify-content: center !important;
+            }
+        }
+    }
+    .div_loc_ref{
+        flex-direction: column !important;
+    }
+    //RESPONSIVE HEADER: GENERAL
+         //RESPONSIVE DEL HEADER: GENERAL
+         body{
+            .header_grl{
+                nav{
+                    ul{
+                        justify-content: center !important;
+                        li{
+                            img{
+                                margin-right: 10px !important;
+                                width: 25px !important;
+                                height: 25px !important;
+                            }
+                        }
+                    }
+                }
+            }
+       }
+       #h1_index{
+        margin-left: 50px !important;
+    }
+         //RESPONSIVE FOOTER EN PANTALLAS MAS PEQUEÑAS
+         @include footer-low-sizes;
+         //RESPONSIVE DEL INDEX
+         @include index_size(60px, 35px);
+}

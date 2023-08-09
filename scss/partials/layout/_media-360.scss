@@ -1,0 +1,13 @@
+
+@media (max-width: 360px){
+    #div_index_title{
+        justify-content: center !important;
+        //h1 del index centrado
+        #h1_index{
+            margin-left: 50px !important;
+        }
+    }
+    @include footer-low-sizes;
+    //RESPONSIVE DEL INDEX
+    @include index_size(50px, 30px);
+}

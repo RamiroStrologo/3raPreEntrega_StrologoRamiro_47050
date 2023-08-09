@@ -1,0 +1,27 @@
+@media (max-width: 768px){
+    body{
+        height: 100vh;
+    #div_index_title{
+        justify-content: center !important;
+    }
+    //RESPONSIVE ABOUT
+       .p_about{
+           font-size: small !important;
+       }
+      //RESPONSIVE LOCATION
+      @include location;
+      //RESPONSIVE DEL HEADER: GENERAL
+       .header_grl{
+           nav{
+               ul{
+                   li{
+                       img{
+                           margin-right: 50px !important;
+                       }
+                   }
+               }
+           }
+       }
+      }
+      @include index_size(120px, 50px);
+   }

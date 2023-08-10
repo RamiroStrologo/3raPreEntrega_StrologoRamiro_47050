@@ -370,6 +370,9 @@ body nav {
   body .p_about {
     font-size: small !important;
   }
+  body .contenedor_portadas_tienda {
+    justify-content: center !important;
+  }
   body .div_about_loc {
     margin-left: 70px !important;
   }
@@ -435,6 +438,10 @@ body nav {
     margin-right: 10px !important;
     width: 25px !important;
     height: 25px !important;
+  }
+  #div_about_info {
+    display: flex;
+    flex-direction: column !important;
   }
   .footer_grl div nav {
     justify-content: center !important;

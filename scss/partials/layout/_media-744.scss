@@ -7,6 +7,10 @@
        .p_about{
            font-size: small !important;
        }
+       //RESPONSIVE TIENDA
+       .contenedor_portadas_tienda{
+        justify-content: center !important;
+       }
       //RESPONSIVE LOCATION
       @include location;
       //RESPONSIVE DEL HEADER: GENERAL

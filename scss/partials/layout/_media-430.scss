@@ -22,7 +22,7 @@
     }
     .div_loc_ref{
         flex-direction: column !important;
-    }
+    } 
     //RESPONSIVE HEADER: GENERAL
          //RESPONSIVE DEL HEADER: GENERAL
          body{
@@ -51,6 +51,11 @@
                 }
             }
        }
+         //RESPONSIVE ABOUT
+         #div_about_info{
+            display: flex;
+            flex-direction: column !important;
+         }
          //RESPONSIVE FOOTER EN PANTALLAS MAS PEQUEÑAS
          @include footer-low-sizes;
          //RESPONSIVE DEL INDEX

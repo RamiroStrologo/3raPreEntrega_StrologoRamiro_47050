@@ -11,6 +11,12 @@ Ademas ofrece un chat con el que podran comunicarse y realizar sus consultas.
 -Boostrap <br>
 -NODE.js <br>
 -SASS <br>
+# Paleta de colores
+#0D1B2A: Azul Marino Profundo
+#1B263B: Azul Oscuro
+#415A77: Azul Acero
+#778DA9: Azul Grisáceo
+#E0E1DD: Gris Claro
 # Archivos
 El desarrollo cuenta con 82 archivos en el root: <br>
 -index.html: page principal del sitio<br>

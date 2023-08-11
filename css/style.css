@@ -411,7 +411,7 @@ body nav {
     font-size: 60px !important;
   }
   .footer_grl {
-    position: absolute !important;
+    position: relative !important;
     bottom: 0 !important;
   }
 }
@@ -455,7 +455,7 @@ body nav {
     flex-direction: column !important;
   }
   .footer_grl {
-    position: absolute !important;
+    position: relative !important;
     bottom: 0 !important;
   }
   .footer_grl div nav {
@@ -551,7 +551,7 @@ body nav {
     margin-left: 50px !important;
   }
   .footer_grl {
-    position: absolute !important;
+    position: relative !important;
     bottom: 0 !important;
   }
   .footer_grl div nav {

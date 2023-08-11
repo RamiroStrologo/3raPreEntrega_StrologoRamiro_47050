@@ -1,6 +1,8 @@
 body {
-  height: 100vh !important;
+  height: 100dvh !important;
   overflow-x: hidden;
+  display: flex !important;
+  flex-direction: column;
 }
 body .header_grl {
   border-bottom: 2px solid #1B263B !important;
@@ -21,8 +23,11 @@ body .header_grl nav ul li img:hover {
 }
 body main {
   background-color: #0D1B2A;
+  flex: 1 !important;
 }
 body .footer_grl {
+  position: absolute !important;
+  bottom: 0 !important;
   margin-top: auto !important;
   background-color: #415A77;
   border-top: 2px solid #1B263B !important;
@@ -510,12 +515,14 @@ body nav {
     color: #E0E1DD;
     height: 25px;
     margin-right: 25px !important;
+    font-size: 13px;
   }
   .card .card-body .output_message {
     background-color: #415A77;
     color: #E0E1DD;
     height: 25px;
     margin-right: 25px !important;
+    font-size: 13px;
   }
   .card .card-body .form-control {
     margin-right: 25px !important;

@@ -1,7 +1,4 @@
 @media (max-width: 431px){
-    #div_index_title{
-        justify-content: center !important;
-    }
        //RESPONSIVE TIENDA
     #nav_tienda{
         .li_tienda_menu{
@@ -23,7 +20,6 @@
     .div_loc_ref{
         flex-direction: column !important;
     } 
-    //RESPONSIVE HEADER: GENERAL
          //RESPONSIVE DEL HEADER: GENERAL
          body{
             .header_grl{
@@ -60,4 +56,33 @@
          @include footer-low-sizes;
          //RESPONSIVE DEL INDEX
          @include index_size(80px,42px);
+             //RESPONSIVE INDEX
+    #div_index_title{
+        justify-content: center !important;
+    }
+    .card{
+        border: 0px !important;  
+        margin-right: 25px !important; 
+       .card-body{
+           background-color: $colorDos;
+               .input_message{
+                   background-color: $colorCuatro;
+                   color: $colorCinco;
+                   height: 25px;
+                   margin-right: 25px !important;
+               }
+               .output_message{
+                   background-color: $colorTres;
+                   color: $colorCinco;
+                   height: 25px;
+                   margin-right: 25px !important;
+               }
+               .form-control {
+                margin-right: 25px !important;
+               }
+               .btn-primary {
+                margin-right: 25px !important;
+               }
+           } 
+   }
 }

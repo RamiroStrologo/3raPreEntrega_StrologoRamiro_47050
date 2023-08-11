@@ -1,6 +1,6 @@
 # DarkGamesSitioWeb
 Sitio Web de DarkGames
-Version 1.0.0.0
+Version 1.0.4
 # Sobre el Sitio
 El sitio de Dark Games es una pagina que representa a un local fisico de venta de Videjo juegos y reparacion de consolas. 
 En la pagina los usuarios podran ver todos los productos que se ofrecen, su precio y su descripción.
@@ -17,6 +17,13 @@ Ademas ofrece un chat con el que podran comunicarse y realizar sus consultas.
 #415A77: Azul Acero <br>
 #778DA9: Azul Grisáceo <br>
 #E0E1DD: Gris Claro <br>
+# Cambios en la version
+Se cambiaron los puntos de quiebre para adaptarse a dispositivos mobiles, tabletas, y pantallas mas grandes. <br>
+Se utilizaron los siguientes puntos:  
+<= 360px: mobiles pequeños.<br>
+<= 430px: mobiles medianos y grandes. <br>
+<= 744px: tablets. <br>
+<= 992px: desktop mediano <br>
 # Archivos
 El desarrollo cuenta con 82 archivos en el root: <br>
 -index.html: page principal del sitio<br>

@@ -1,8 +1,6 @@
 body{
     height: 100dvh !important;   
     overflow-x: hidden;
-    display: flex !important;
-    flex-direction: column;
     .header_grl{   
         border-bottom: 2px solid $colorDos !important;
         background-color: $colorTres;
@@ -31,8 +29,6 @@ body{
     }
 
     .footer_grl{
-        position: absolute !important;
-        bottom: 0 !important;
         margin-top: auto !important;
         background-color: $colorTres;  
         border-top: 2px solid $colorDos !important;

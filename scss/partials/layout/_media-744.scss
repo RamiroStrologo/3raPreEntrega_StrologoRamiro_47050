@@ -1,5 +1,7 @@
 @media (max-width: 744px){
     body{
+        display: flex !important;
+        flex-direction: column !important;
     #div_index_title{
         justify-content: center !important;
     }
@@ -27,4 +29,9 @@
        }
       }
       @include index_size(120px, 60px);
+
+      .footer_grl{
+        position: absolute !important;
+        bottom: 0 !important;
+    }
 }

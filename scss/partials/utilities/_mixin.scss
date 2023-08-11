@@ -1,6 +1,8 @@
 @mixin footer-low-sizes {
     //RESPONSIVE FOOTER EN PANTALLAS MAS PEQUEÑAS
     .footer_grl{
+        position: absolute !important;
+        bottom: 0 !important;
         div{
             nav{
                 justify-content: center !important;

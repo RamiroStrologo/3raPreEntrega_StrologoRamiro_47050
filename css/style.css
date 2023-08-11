@@ -1,6 +1,6 @@
 body {
   height: 100vh !important;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body .header_grl {
   border-bottom: 2px solid #1B263B !important;

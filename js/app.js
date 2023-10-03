@@ -321,7 +321,7 @@ btnPS4.addEventListener("click", identificarConsola(btnPS4));
 const btnXONE = document.querySelector("#btnXONE");
 btnPS4.addEventListener("click", identificarConsola(btnXONE));
 
-function mostrarJuegos(arrayGames) {
+function mostrarJuegos(arrayGames, consolaInfo) {
   const gamesContainer = document.querySelector("#section_juegos_tienda");
   //CREO EL SEPARADOR, ASIGNO CLASES, INICIALIZO ATRIBUTOS Y RELACIONO LOS ELEMENTOS
   const separator = document.createElement("div");
@@ -336,19 +336,19 @@ function mostrarJuegos(arrayGames) {
     "justify-content-evenly"
   );
   separator.id = "ps3_games";
-  imgSep1.src = arrayGames.imgSepSrc;
-  imgSep1.alt = arrayGames.altImgSep;
-  imgSep2.src = arrayGames.imgSepSrc;
-  imgSep2.alt = arrayGames.altImgSep;
-  textSep.innerText = arrayGames.txtSep;
+  imgSep1.src = consolaInfo[0];
+  imgSep1.alt = consolaInfo[2];
+  imgSep2.src = consolaInfo[0];
+  imgSep2.alt = consolaInfo[2];
+  textSep.innerText = consolaInfo[2];
   separator.appendChild(imgSep1);
   separator.appendChild(textSep);
   separator.appendChild(imgSep2);
   gamesContainer.appendChild(separator);
   //RECORRE EL ARREGLO DE JUEGOS
   const childGamesContainer = document.createElement("div");
-  console.log(array);
-  arrayGames.forEach((juego) => {
+  console.log(arrayGames);
+  for (const key in arrayGames) {
     //CREA LOS ELEMENTOS
     const divGame = document.createElement("div");
     const imgGame = document.createElement("img");
@@ -368,47 +368,54 @@ function mostrarJuegos(arrayGames) {
       "div_img_tienda"
     );
     imgGame.classList.add("img_portadas");
-    imgGame.src = juego.imagenSrc;
-    imgGame.alt = juego.titulo;
-    parrafo.innerHTML = `Género: ${juego.genero} <br />
-    Precio: ${juego.precio} <br />`;
+    imgGame.src = arrayGames.imagenSrc;
+    imgGame.alt = arrayGames.titulo;
+    parrafo.innerHTML = `Género: ${arrayGames.genero} <br />
+    Precio: ${arrayGames.precio} <br />`;
     //EMPARENTA LOS ELEMENTOS
     divGame.appendChild(imgGame);
     divGame.appendChild(parrafo);
     childGamesContainer.appendChild(divGame);
-  });
+  }
   gamesContainer.appendChild(childGamesContainer);
 }
 
-function identificarConsola(btn, contenedor) {
+function identificarConsola(btn) {
   if (btn) {
+    let consolaInfo = {};
     switch (btn.id) {
       case "btnPS3":
         const arrayGamesPs3 = {
           ...juegosPorConsola.ps3,
-          imgSepSrc: "../assets/images/nav_icos/ps-logo-ico.svg",
-          txtSep: "Juegos de PS3",
-          altImgSep: "IconoPS",
         };
-        mostrarJuegos(arrayGamesPs3);
+          consolaInfo = {
+          imgSepSrc: "../assets/images/nav_icos/ps-logo-ico.svg",
+            txtSep: "Juegos de PS4",
+            altImgSep: "IconoPS",
+        }
+        mostrarJuegos(arrayGamesPs3, consolaInfo);
         break;
       case "btnPS4":
         const arrayGamesPs4 = {
           ...juegosPorConsola.ps4,
-          imgSepSrc: "../assets/images/nav_icos/ps-logo-ico.svg",
+      };
+        consolaInfo = {
+        imgSepSrc: "../assets/images/nav_icos/ps-logo-ico.svg",
           txtSep: "Juegos de PS4",
           altImgSep: "IconoPS",
-        };
-        mostrarJuegos(arrayGamesPs4);
+      }
+        mostrarJuegos(arrayGamesPs4, consolaInfo);
         break;
       case "btnXONE":
         const arrayGamesXONE = {
           ...juegosPorConsola.xone,
+        };
+        consolaInfo = {
           imgSepSrc: "../assets/images/nav_icos/xbox-logo-ico.svg",
           txtSep: "Juegos de XBOX ONE",
           altImgSep: "IconoXONE",
-        };
-        mostrarJuegos(arrayGamesXONE);
+        }
+        mostrarJuegos(arrayGamesXONE, consolaInfo);
         break;
     }
   }

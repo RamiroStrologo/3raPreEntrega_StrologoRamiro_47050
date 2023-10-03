@@ -206,7 +206,7 @@ const juegosPorConsola = {
         "Explora la Edad Media como un feroz vikingo, saquea y conquista en este épico viaje de la saga Assassin's Creed.",
     },
   ],
-  xbox: [
+  xone: [
     {
       imagenSrc: "../assets/images/webP/portadasXONE/quantum-break-xone.webp",
       titulo: "Quantum Break",
@@ -315,9 +315,13 @@ const juegosPorConsola = {
 };
 
 const btnPS3 = document.querySelector("#btnPS3");
-btnPS3.addEventListener("click", mostrarJuegosPS3);
+btnPS3.addEventListener("click", identificarConsola(btnPS3));
+const btnPS4 = document.querySelector("#btnPS4");
+btnPS4.addEventListener("click", identificarConsola(btnPS4));
+const btnXONE = document.querySelector("#btnXONE");
+btnPS4.addEventListener("click", identificarConsola(btnXONE));
 
-function mostrarJuegosPS3() {
+function mostrarJuegos(arrayGames) {
   const gamesContainer = document.querySelector("#section_juegos_tienda");
   //CREO EL SEPARADOR, ASIGNO CLASES, INICIALIZO ATRIBUTOS Y RELACIONO LOS ELEMENTOS
   const separator = document.createElement("div");
@@ -332,18 +336,19 @@ function mostrarJuegosPS3() {
     "justify-content-evenly"
   );
   separator.id = "ps3_games";
-  imgSep1.src = "../assets/images/nav_icos/ps-logo-ico.svg";
-  imgSep1.alt = "Icono PS";
-  imgSep2.src = "../assets/images/nav_icos/ps-logo-ico.svg";
-  imgSep2.alt = "Icono PS";
-  textSep.innerText = "JUEGOSPS3";
+  imgSep1.src = arrayGames.imgSepSrc;
+  imgSep1.alt = arrayGames.altImgSep;
+  imgSep2.src = arrayGames.imgSepSrc;
+  imgSep2.alt = arrayGames.altImgSep;
+  textSep.innerText = arrayGames.txtSep;
   separator.appendChild(imgSep1);
   separator.appendChild(textSep);
   separator.appendChild(imgSep2);
   gamesContainer.appendChild(separator);
   //RECORRE EL ARREGLO DE JUEGOS
   const childGamesContainer = document.createElement("div");
-  juegosPorConsola.ps3.forEach((juego) => {
+  console.log(array);
+  arrayGames.forEach((juego) => {
     //CREA LOS ELEMENTOS
     const divGame = document.createElement("div");
     const imgGame = document.createElement("img");
@@ -366,12 +371,45 @@ function mostrarJuegosPS3() {
     imgGame.src = juego.imagenSrc;
     imgGame.alt = juego.titulo;
     parrafo.innerHTML = `Género: ${juego.genero} <br />
-    Precio: ${juego.precio} <br />
-    Descripción: ${juego.descripcion}`;
+    Precio: ${juego.precio} <br />`;
     //EMPARENTA LOS ELEMENTOS
     divGame.appendChild(imgGame);
     divGame.appendChild(parrafo);
     childGamesContainer.appendChild(divGame);
   });
   gamesContainer.appendChild(childGamesContainer);
+}
+
+function identificarConsola(btn, contenedor) {
+  if (btn) {
+    switch (btn.id) {
+      case "btnPS3":
+        const arrayGamesPs3 = {
+          ...juegosPorConsola.ps3,
+          imgSepSrc: "../assets/images/nav_icos/ps-logo-ico.svg",
+          txtSep: "Juegos de PS3",
+          altImgSep: "IconoPS",
+        };
+        mostrarJuegos(arrayGamesPs3);
+        break;
+      case "btnPS4":
+        const arrayGamesPs4 = {
+          ...juegosPorConsola.ps4,
+          imgSepSrc: "../assets/images/nav_icos/ps-logo-ico.svg",
+          txtSep: "Juegos de PS4",
+          altImgSep: "IconoPS",
+        };
+        mostrarJuegos(arrayGamesPs4);
+        break;
+      case "btnXONE":
+        const arrayGamesXONE = {
+          ...juegosPorConsola.xone,
+          imgSepSrc: "../assets/images/nav_icos/xbox-logo-ico.svg",
+          txtSep: "Juegos de XBOX ONE",
+          altImgSep: "IconoXONE",
+        };
+        mostrarJuegos(arrayGamesXONE);
+        break;
+    }
+  }
 }

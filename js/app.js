@@ -314,20 +314,9 @@ const juegosPorConsola = {
   ],
 };
 
-const btnPS3 = document.querySelector("#btnPS3");
-btnPS3.addEventListener("click", function () {
-  identificarConsola(btnPS3.id);
-});
-
-const btnPS4 = document.querySelector("#btnPS4");
-btnPS4.addEventListener("click", function () {
-  identificarConsola(btnPS4.id);
-});
-
-const btnXONE = document.querySelector("#btnXONE");
-btnXONE.addEventListener("click", function () {
-  identificarConsola(btnXONE.id);
-});
+// document.addEventListener("DOMContentLoaded", function () {
+//   cargarIndex();
+// });
 
 function mostrarJuegos(arrayGames, consolaInfo) {
   const gamesContainer = document.querySelector("#section_juegos_tienda");
@@ -431,3 +420,148 @@ function identificarConsola(btnid) {
       break;
   }
 }
+
+function cambiarPage(newPage) {
+  const containerMain = document.querySelector("#mainContainer");
+  containerMain.innerHTML = " ";
+  containerMain.innerHTML = newPage;
+}
+
+function cargarTienda() {
+  cambiarPage(`<div class="row">
+  <!-- //MENU DE NAVEGACION IZQUIERDO -->
+  <aside class="col-sm-2 col-md-1 p-0" id="div_aside_tienda">
+    <nav class="p-0 fixed col-sm-2 col-md-1" id="nav_tienda">
+      <ul
+        class="d-flex flex-column align-items-center justify-content-center h-auto w-100 border border-dark p-0 m-0"
+      >
+        <li
+          class="border-bottom border-dark w-100 list-unstyled text-center"
+        >
+          <button
+            type="button"
+            class="button_tienda_filtro"
+            id="button_tienda_hamburger"
+          >
+            <img
+              src="../assets/images/nav_icos/hamburger-menu-ico.svg"
+              id="hamburger_tienda"
+              alt="hamburger_ico"
+            />
+          </button>
+        </li>
+        <li
+          class="border-bottom border-dark w-100 list-unstyled text-center li_tienda_menu"
+        >
+          <button type="button" id="btnPS4" class="button_tienda_filtro">
+            PS4
+          </button>
+        </li>
+        <li
+          class="border-bottom border-dark w-100 list-unstyled text-center li_tienda_menu"
+        >
+          <button type="button" id="btnPS3" class="button_tienda_filtro">
+            PS3
+          </button>
+        </li>
+        <li
+          class="border-bottom border-dark w-100 list-unstyled text-center li_tienda_menu"
+        >
+          <button type="button" id="btnXONE" class="button_tienda_filtro">
+            XBOX ONE
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <section
+    class="col-sm-10 col-md-11 d-flex flex-column align-items-center justify-content-center flex-wrap"
+    id="section_juegos_tienda"
+  ></section>
+</div>`);
+
+  const btnPS3 = document.querySelector("#btnPS3");
+  btnPS3.addEventListener("click", function () {
+    identificarConsola(btnPS3.id);
+  });
+
+  const btnPS4 = document.querySelector("#btnPS4");
+  btnPS4.addEventListener("click", function () {
+    identificarConsola(btnPS4.id);
+  });
+
+  const btnXONE = document.querySelector("#btnXONE");
+  btnXONE.addEventListener("click", function () {
+    identificarConsola(btnXONE.id);
+  });
+}
+
+function cargarIndex() {
+  cambiarPage(`    <div class="row">
+<div
+  class="col-12 d-flex justify-content-center align-items-center"
+  id="div_index_title"
+>
+  <h1 id="h1_index">DARK GAMES</h1>
+</div>
+<div class="col-12 d-flex justify-content-evenly align-items-center">
+  <div
+    class="d-flex justify-content-center align-items-center me-5"
+    id="div_index_linkA"
+  >
+    <a id="aTiendaPS4" class="d-flex justify-content-center a_ico_index"
+      ><img
+        src="./assets/images/nav_icos/ps-logo-ico.svg"
+        alt="icono de tienda"
+    /></a>
+  </div>
+  <div
+    class="d-flex justify-content-center align-items-center ms-5"
+    id="div_index_linkB"
+  >
+    <a
+      id="aTiendaXONE"
+      class="d-flex justify-content-center a_ico_index"
+      ><img
+        src="./assets/images/nav_icos/xbox-logo-ico.svg"
+        alt="icono de tienda"
+    /></a>
+  </div>
+</div>
+</div>`);
+  const aPS4 = document.querySelector("#aTiendaPS4");
+  aPS4.addEventListener("click", function () {
+    cargarTienda();
+    identificarConsola("btnPS4");
+  });
+
+  const aXONE = document.querySelector("#aTiendaXONE");
+  aXONE.addEventListener("click", function () {
+    cargarTienda();
+    identificarConsola("btnXONE");
+  });
+}
+
+const aPS4 = document.querySelector("#aTiendaPS4");
+aPS4.addEventListener("click", function () {
+  cargarTienda();
+  identificarConsola("btnPS4");
+});
+
+const aXONE = document.querySelector("#aTiendaXONE");
+aXONE.addEventListener("click", function () {
+  cargarTienda();
+  identificarConsola("btnXONE");
+});
+
+//EVENTOS DEL HEADER
+const aIndex = document.querySelector("#aIndex");
+aIndex.addEventListener("click", function () {
+  cargarIndex();
+});
+
+const aTienda = document.querySelector("#aTienda");
+aTienda.addEventListener("click", function () {
+  cargarTienda();
+  identificarConsola("btnPS4");
+});

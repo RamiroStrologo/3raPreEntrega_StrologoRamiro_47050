@@ -420,13 +420,13 @@ function identificarConsola(btnid) {
       break;
   }
 }
-
+//FUNCION QUE CAMBIA EL CONTENIDO MAIN DEL HTML(SPA)
 function cambiarPage(newPage) {
   const containerMain = document.querySelector("#mainContainer");
   containerMain.innerHTML = " ";
   containerMain.innerHTML = newPage;
 }
-
+//ESTAS FUNCIONES CONTIENEN EL HTML DE LAS SECCIONES DEL SITIO
 function cargarTienda() {
   cambiarPage(`<div class="row">
   <!-- //MENU DE NAVEGACION IZQUIERDO -->
@@ -541,7 +541,216 @@ function cargarIndex() {
     identificarConsola("btnXONE");
   });
 }
-
+function cargarLogup() {
+  cambiarPage(`<div class="row m-0">
+  <div
+    class="h-100 p-0 m-0 d-flex justify-content-center align-items-center"
+  >
+    <!-- //DIV CONTIENE EL FORMULARIO Y UN SUBTITULO REFERENCIAL -->
+    <!-- //LA CLASE div_border_loginup SE PUEDE VER _loginup.scss -->
+    <div
+      class="d-inline-flex d-flex flex-column align-items-center justify-content-center m-0 mb-5 mt-5 p-5 flex-wrap div_border_loginup"
+    >
+      <h1>REGISTRARSE</h1>
+      <!-- //FORM CONTIENE LOS CONTROLES -->
+      <form action="" class="col-12 mt-4">
+        <div class="mb-3">
+          <label for="nombre_usuario_log" class="form-label"
+            >Nombre de usuario:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="nombre_usuario_log"
+            placeholder="Nombre de usuario"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="contrasenia_usuario_log" class="form-label"
+            >Crear contraseña:</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="contrasenia_usuario_log"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="contrasenia_usuario_rep_log" class="form-label"
+            >Repetir contraseña:</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="contrasenia_usuario_rep_log"
+            placeholder="Repetir contraseña"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email_usuario" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email_usuario"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="d-flex flex-column mb-3">
+          <button type="button" class="button_form">Registrarse</button>
+          <a href="../pages/iniciar_sesion.html" class="ms-5"
+            >¿Ya estas registrado?</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>`);
+}
+function cargarLogin() {
+  cambiarPage(`<div class="row h-100">
+  <div class="d-flex justify-content-center align-items-center">
+    <!-- //DIV CONTIENE EL FORMULARIO Y UNA IMAGEN REFERENCIAL -->
+    <!-- //LA CLASE div_border_loginup SE PUEDE VER _loginup.scss -->
+    <div
+      class="d-inline-flex d-flex flex-column align-items-center justify-content-center m-0 mb-5 mt-5 p-5 flex-wrap div_border_loginup"
+    >
+      <div class="">
+        <img
+          src="../assets/images/nav_icos/user-registro-ico.svg"
+          alt="Perfil de usuario"
+          width="100"
+          height="75"
+        />
+      </div>
+      <!-- //FORM CONTIENE LOS CONTROLES -->
+      <form action="" class="col-12 mt-4">
+        <div class="mb-3">
+          <label for="nombre_usuario_ini" class="form-label"
+            >Usuario:</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="nombre_usuario_ini"
+            placeholder="Nombre de usuario"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="contrasenia_usuario_ini" class="form-label"
+            >Contraseña</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="contrasenia_usuario_ini"
+            placeholder="Contraseña"
+          />
+        </div>
+        <div class="d-flex flex-column mb-3">
+          <button type="button" class="mb-3 button_form">Iniciar</button>
+          <a href="./registro.html" class="ms-4">¿No estas registrado?</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>`);
+}
+function cargarAboutUs() {
+  cambiarPage(`<div class="row">
+  <!-- //CONTENIDO DE LA PAGINA-->
+  <div class="col-12">
+    <div
+      class="d-flex flex-row align-items-center justify-content-center"
+      id="div_about_info"
+    >
+      <div
+        class="col-md-12 col-lg-8 d-flex flex-column align-items-start div_loc_ref"
+      >
+        <div
+          class="d-flex flex-column align-items-start div_about_loc m-3"
+        >
+          <p class="p_about">
+            <img
+              src="../assets/images/nav_icos/location-ico.svg"
+              alt="ubicación"
+              class="me-2"
+            />Encontranos en: L. N. Alem 215, Local 16, Monte Grande, Bs.
+            As.
+          </p>
+        </div>
+        <div
+          class="d-flex flex-column align-items-start mt-5 div_about_loc m-3"
+        >
+          <p class="p_about">
+            <img
+              src="../assets/images/nav_icos/clock-ico.svg"
+              alt="ubicación"
+              class="me-2"
+            />Horario de atención:
+          </p>
+          <ul>
+            <li class="p_about ms-5">Lunes a Viernes de 9hs a 19hs</li>
+            <li class="p_about ms-5">
+              Sabados de 9 a 13hs y de 16 a 20hs
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div
+        class="col-ms-12 col-md-12 col-lg-4 d-flex flex-column align-items-center justify-content-center"
+      >
+        <div class="d-flex justify-content-center" id="location_map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1821.751452626789!2d-58.46909557444401!3d-34.81670059168507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd161571a21f1%3A0xf0f45268ec345ac3!2sAAC%2C%20Leandro%20N.%20Alem%20215%2C%20C1003%20Monte%20Grande%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1690977607556!5m2!1ses!2sar"
+            width="500"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="separador"></div>
+  <div class="col-sm-12 col-md-12" id="about_text">
+    <h1>SOBRE NOSOTROS</h1>
+    <!-- // LA CLASE p_about SE VE EN _media_q.scss media 768px -->
+    <p class="p_about">
+      Dark Games es un local atendido hace más de 10 años por Gamers como
+      vos y compartimos la misma pasión que vos por los juegos! Nos
+      enorgullece presentar un rincón único en el mundo de los
+      videojuegos, donde la pasión y la diversión se unen. Contamos con
+      una amplia selección de juegos para Play Station, XBOX y PC, así
+      como el compromiso de brindar un servicio personalizado y
+      orientación experta Nos dedicamos a la venta, compra y canje de
+      videojuegos de todas las consolas; y reparacion de computadoras y
+      consolas. Visitanos en nuestro local en Monte Grande, Alem 215 Local
+      16, o contactanos por <a href="./inbox.html">inbox</a> o
+      <a
+        href="https://api.whatsapp.com/send?phone=1123629147"
+        target="_blank"
+        >Whatsapp</a
+      >. Tambien podes seguirnos en
+      <a href="https://www.instagram.com/dark_games.mg/" target="_blank"
+        >Instagram</a
+      >
+      (...).
+    </p>
+    <div>
+      <img
+        src="../assets/images//webP/about_us.webp"
+        alt="us"
+        class="img-fluid"
+        id="img_about"
+      />
+    </div>
+  </div>
+</div>`);
+}
+//EVENTOS DEL INDEX
 const aPS4 = document.querySelector("#aTiendaPS4");
 aPS4.addEventListener("click", function () {
   cargarTienda();
@@ -564,4 +773,16 @@ const aTienda = document.querySelector("#aTienda");
 aTienda.addEventListener("click", function () {
   cargarTienda();
   identificarConsola("btnPS4");
+});
+const aLogin = document.querySelector("#aLogin");
+aLogin.addEventListener("click", function () {
+  cargarLogin();
+});
+const aLogup = document.querySelector("#aLogup");
+aLogup.addEventListener("click", function () {
+  cargarLogup();
+});
+const aAboutUs = document.querySelector("#aAboutUs");
+aAboutUs.addEventListener("click", function () {
+  cargarAboutUs();
 });

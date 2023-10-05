@@ -314,10 +314,6 @@ const juegosPorConsola = {
   ],
 };
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   cargarIndex();
-// });
-
 function mostrarJuegos(arrayGames, consolaInfo) {
   const gamesContainer = document.querySelector("#section_juegos_tienda");
   //LIMPIO EL CONTENEDOR PADRE
@@ -495,7 +491,6 @@ function cargarTienda() {
     identificarConsola(btnXONE.id);
   });
 }
-
 function cargarIndex() {
   cambiarPage(`    <div class="row">
 <div
@@ -597,8 +592,8 @@ function cargarLogup() {
           />
         </div>
         <div class="d-flex flex-column mb-3">
-          <button type="button" class="button_form">Registrarse</button>
-          <a href="../pages/iniciar_sesion.html" class="ms-5"
+          <button type="button" id="btnLogup" class="button_form">Registrarse</button>
+          <a  id="swapLogIn" class="ms-5"
             >¿Ya estas registrado?</a
           >
         </div>
@@ -606,6 +601,20 @@ function cargarLogup() {
     </div>
   </div>
 </div>`);
+  const btnLogup = document.querySelector("#btnLogup");
+  btnLogup.addEventListener("click", function () {
+    const txtUser = document.querySelector("#nombre_usuario_log").value;
+    const txtPass = document.querySelector("#contrasenia_usuario_log").value;
+    const txtPassRep = document.querySelector(
+      "#contrasenia_usuario_rep_log"
+    ).value;
+    if (txtPass == txtPassRep) logUp(txtUser, txtPass);
+    else alert("Las contraseñas no coinciden");
+  });
+  const swapLogIn = document.querySelector("#swapLogIn");
+  swapLogIn.addEventListener("click", function () {
+    cargarLogin();
+  });
 }
 function cargarLogin() {
   cambiarPage(`<div class="row h-100">
@@ -648,13 +657,23 @@ function cargarLogin() {
           />
         </div>
         <div class="d-flex flex-column mb-3">
-          <button type="button" class="mb-3 button_form">Iniciar</button>
-          <a href="./registro.html" class="ms-4">¿No estas registrado?</a>
+          <button type="button" id="btnLogin" class="mb-3 button_form">Iniciar</button>
+          <a id="swapLogUp" class="ms-4">¿No estas registrado?</a>
         </div>
       </form>
     </div>
   </div>
 </div>`);
+  const btnLogin = document.querySelector("#btnLogin");
+  btnLogin.addEventListener("click", function () {
+    const txtName = document.querySelector("#nombre_usuario_ini").value;
+    const txtPass = document.querySelector("#contrasenia_usuario_ini").value;
+    logIn(txtName, txtPass);
+  });
+  const swapLogUp = document.querySelector("#swapLogUp");
+  swapLogUp.addEventListener("click", function () {
+    cargarLogup();
+  });
 }
 function cargarAboutUs() {
   cambiarPage(`<div class="row">
@@ -763,7 +782,7 @@ aXONE.addEventListener("click", function () {
   identificarConsola("btnXONE");
 });
 
-//EVENTOS DEL HEADER
+//EVENTOS DEL HEADER Y FOOTER
 const aIndex = document.querySelector("#aIndex");
 aIndex.addEventListener("click", function () {
   cargarIndex();
@@ -782,7 +801,27 @@ const aLogup = document.querySelector("#aLogup");
 aLogup.addEventListener("click", function () {
   cargarLogup();
 });
-const aAboutUs = document.querySelector("#aAboutUs");
-aAboutUs.addEventListener("click", function () {
-  cargarAboutUs();
+const aAboutUs = document.querySelectorAll(".aAboutUs");
+aAboutUs.forEach((el) => {
+  el.addEventListener("click", function () {
+    cargarAboutUs();
+  });
 });
+
+//FUNCION QUE COMPRUEBA LA EXISTENCIA DEL USUARIO
+function logIn(nombre, password) {
+  const userNombre = localStorage.getItem("userNombre");
+  const userPassword = localStorage.getItem("userPassword");
+  if (nombre == userNombre && password == userPassword) {
+    alert("¡Bienvenido!");
+  } else alert("Usuario y/o constraseña incorrectos");
+}
+//FUNCION QUE REGISTRA AL USUARIO
+function logUp(nombre, password) {
+  const chekName = localStorage.getItem("userNombre");
+  if (chekName != nombre) {
+    localStorage.setItem("userNombre", nombre);
+    localStorage.setItem("userPassword", password);
+    alert("Usuario registrado ¡Bienvenido!");
+  } else alert("El nombre de usuario esta en uso");
+}

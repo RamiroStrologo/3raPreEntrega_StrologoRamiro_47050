@@ -608,8 +608,18 @@ function cargarLogup() {
     const txtPassRep = document.querySelector(
       "#contrasenia_usuario_rep_log"
     ).value;
-    if (txtPass == txtPassRep) logUp(txtUser, txtPass);
-    else alert("Las contraseñas no coinciden");
+    if (txtPass == txtPassRep) {
+      logUp(txtUser, txtPass);
+      txtUser.value = "";
+      txtPass.value = "";
+      txtPassRep.value = "";
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Las contraseñas deben coincidir!",
+      });
+    }
   });
   const swapLogIn = document.querySelector("#swapLogIn");
   swapLogIn.addEventListener("click", function () {
@@ -813,8 +823,21 @@ function logIn(nombre, password) {
   const userNombre = localStorage.getItem("userNombre");
   const userPassword = localStorage.getItem("userPassword");
   if (nombre == userNombre && password == userPassword) {
-    alert("¡Bienvenido!");
-  } else alert("Usuario y/o constraseña incorrectos");
+    document.querySelector("#nombre_usuario_ini").value = "";
+    document.querySelector("#contrasenia_usuario_ini").value = "";
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "¡Bienvenido!",
+      timer: 1500,
+    });
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Usuario y/o contraseña incorrectos",
+    });
+  }
 }
 //FUNCION QUE REGISTRA AL USUARIO
 function logUp(nombre, password) {
@@ -822,6 +845,20 @@ function logUp(nombre, password) {
   if (chekName != nombre) {
     localStorage.setItem("userNombre", nombre);
     localStorage.setItem("userPassword", password);
-    alert("Usuario registrado ¡Bienvenido!");
-  } else alert("El nombre de usuario esta en uso");
+    document.querySelector("#nombre_usuario_log").value = "";
+    document.querySelector("#contrasenia_usuario_log").value = "";
+    document.querySelector("#contrasenia_usuario_rep_log").value = "";
+    Swal.fire({
+      position: "center",
+      icon: "success",
+      title: "Usuario registrado ¡Bienvenido!",
+      timer: 1500,
+    });
+  } else {
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "El nombre de usuario ya esta en uso",
+    });
+  }
 }

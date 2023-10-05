@@ -5,12 +5,14 @@ Version 1.0.4
 El sitio de Dark Games es una pagina que representa a un local fisico de venta de Videjo juegos y reparacion de consolas. 
 En la pagina los usuarios podran ver todos los productos que se ofrecen, su precio y su descripción.
 Ademas ofrece un chat con el que podran comunicarse y realizar sus consultas.
-# Tecnologias, frameworks y lenguajes utilizados
+# Tecnologias, frameworks, librerias y lenguajes utilizados
 -HTML5 <br>
 -CSS3 <br>
+-JavaScript <br>
 -Boostrap <br>
 -NODE.js <br>
 -SASS <br>
+-SweetAlert
 # Paleta de colores
 #0D1B2A: Azul Marino Profundo <br>
 #1B263B: Azul Oscuro <br>
@@ -61,6 +63,6 @@ En este espacio voy a dejar acalaraciones para que el profesor lea y tenga en co
  2. El sitio fue migrado de MPA a SPA, todo el contenido se ejecuta en index.html de manera dinamica.
  3. Todo el JS del sitio se encuentra en un archivo (js/app.js)
  4. El CSS (css/style.css) aplicado se encuentra modularizado en SCSS (scss/style.scss)
- 5. El sitio cuenta con ALERT en los modulos de Login/up. Se entregara de esta manera por precaucion pero lo intentare modificar antes de la corrección.
+ 5. El sitio cuenta con SweetAlert en los modulos de Login/up. Por motivos que desconozco, estos aparecen desalineados. 
  6. En el codigo se encuentran comentarios explicativos. 
    

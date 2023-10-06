@@ -1,0 +1,22 @@
+#detailCont {
+  background-color: $colorUno;
+  #imgCont {
+    background-color: $colorDos;
+    img {
+      height: 500px;
+      width: 380px;
+    }
+  }
+  #descCont {
+    background-color: $colorDos;
+  }
+  #datCont {
+    background-color: $colorDos;
+  }
+  #asideDetalles {
+    background-color: $colorDos;
+  }
+  #secDetalles {
+    background-color: $colorDos;
+  }
+}

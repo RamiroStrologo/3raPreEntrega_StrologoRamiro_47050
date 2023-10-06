@@ -309,6 +309,29 @@ body nav {
   border-color: #415A77;
 }
 
+#detailCont {
+  background-color: #0D1B2A;
+}
+#detailCont #imgCont {
+  background-color: #1B263B;
+}
+#detailCont #imgCont img {
+  height: 500px;
+  width: 380px;
+}
+#detailCont #descCont {
+  background-color: #1B263B;
+}
+#detailCont #datCont {
+  background-color: #1B263B;
+}
+#detailCont #asideDetalles {
+  background-color: #1B263B;
+}
+#detailCont #secDetalles {
+  background-color: #1B263B;
+}
+
 @media (max-width: 992px) {
   body .footer_grl div nav {
     justify-content: center;

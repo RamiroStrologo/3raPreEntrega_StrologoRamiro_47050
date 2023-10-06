@@ -64,5 +64,6 @@ En este espacio voy a dejar acalaraciones para que el profesor lea y tenga en co
  3. Todo el JS del sitio se encuentra en un archivo (js/app.js)
  4. El CSS (css/style.css) aplicado se encuentra modularizado en SCSS (scss/style.scss)
  5. El sitio cuenta con SweetAlert en los modulos de Login/up. Por motivos que desconozco, estos aparecen desalineados. 
- 6. En el codigo se encuentran comentarios explicativos. 
+ 6. En el codigo se encuentran comentarios explicativos.
+ 7. 6/10 se agrego la seccion de detalles personalizada al hacer click en la portada de un videojuego. (sin finalizar)
    

@@ -386,7 +386,7 @@ function identificarConsola(btnid) {
       };
       ///CREA UN OBJETO CON LOS DATOS DE LA CONSOLA
       consolaInfo = {
-        imgSepSrc: "../assets/images/nav_icos/ps-logo-ico.svg",
+        imgSepSrc: "./assets/images/nav_icos/ps-logo-ico.svg",
         txtSep: "Juegos de PS3",
         altImgSep: "IconoPS",
       };
@@ -397,7 +397,7 @@ function identificarConsola(btnid) {
         ...juegosPorConsola.ps4,
       };
       consolaInfo = {
-        imgSepSrc: "../assets/images/nav_icos/ps-logo-ico.svg",
+        imgSepSrc: "./assets/images/nav_icos/ps-logo-ico.svg",
         txtSep: "Juegos de PS4",
         altImgSep: "IconoPS",
       };
@@ -408,7 +408,7 @@ function identificarConsola(btnid) {
         ...juegosPorConsola.xone,
       };
       consolaInfo = {
-        imgSepSrc: "../assets/images/nav_icos/xbox-logo-ico.svg",
+        imgSepSrc: "./assets/images/nav_icos/xbox-logo-ico.svg",
         txtSep: "Juegos de XBOX ONE",
         altImgSep: "IconoXONE",
       };

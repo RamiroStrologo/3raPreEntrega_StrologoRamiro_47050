@@ -303,8 +303,7 @@ const juegosPorConsola = {
         "Sumérgete en un mundo lleno de pesadillas y horrores en The Evil Within. Vive una experiencia de survival horror llena de terror y suspense.",
     },
     {
-      imagenSrc:
-        "../assets/images/webP/portadasXONE/ryse-son-of-rome-xone.webp",
+      imagenSrc: "./assets/images/webP/portadasXONE/ryse-son-of-rome-xone.webp",
       titulo: "Ryse: Son of Rome",
       genero: "Acción y aventura",
       precio: "$8000",

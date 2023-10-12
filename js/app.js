@@ -2,7 +2,7 @@
 const juegosPorConsola = {
   ps3: [
     {
-      imagenSrc: "../assets/images/webP/PortadasPS3/the-last-of-us-ps3.webp",
+      imagenSrc: "./assets/images/webP/PortadasPS3/the-last-of-us-ps3.webp",
       titulo: "The Last of Us",
       genero: "Acción y aventura",
       precio: "$6000",
@@ -10,7 +10,7 @@ const juegosPorConsola = {
         "Únete a Joel y Ellie en un emotivo viaje a través de un mundo postapocalíptico mientras luchan por sobrevivir y encontrar la esperanza en este aclamado juego de acción y aventura.",
     },
     {
-      imagenSrc: "../assets/images/webP/PortadasPS3/gta-v-ps3.webp",
+      imagenSrc: "./assets/images/webP/PortadasPS3/gta-v-ps3.webp",
       titulo: "GTA V",
       genero: "Mundo abierto, acción",
       precio: "$5500",
@@ -19,7 +19,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/PortadasPS3/the-elder-scrolls-v-skyrim-ps3.webp",
+        "./assets/images/webP/PortadasPS3/the-elder-scrolls-v-skyrim-ps3.webp",
       titulo: "The Elder Scrolls V: Skyrim",
       genero: "RPG de mundo abierto",
       precio: "$4500",
@@ -27,7 +27,7 @@ const juegosPorConsola = {
         "Sumérgete en el vasto mundo de Skyrim, repleto de dragones, magia y aventuras épicas mientras forjas tu propio camino como el Sangre de Dragón. Este juego de rol de mundo abierto te permite explorar un mundo rico y lleno de secretos.",
     },
     {
-      imagenSrc: "../assets/images/webP/PortadasPS3/battlefield-4-ps3.webp",
+      imagenSrc: "./assets/images/webP/PortadasPS3/battlefield-4-ps3.webp",
       titulo: "Battlefield 4",
       genero: "Shooter en primera persona",
       precio: "$4000",
@@ -35,7 +35,7 @@ const juegosPorConsola = {
         "Entra en batallas intensas y combates realistas en este juego de disparos multijugador ambientado en diversos escenarios de guerra. Battlefield 4 ofrece acción sin igual y una experiencia de juego inmersiva.",
     },
     {
-      imagenSrc: "../assets/images/webP/PortadasPS3/dark-souls-ii.webp",
+      imagenSrc: "./assets/images/webP/PortadasPS3/dark-souls-ii.webp",
       titulo: "Dark Souls II",
       genero: "Acción y rol",
       precio: "$5000",
@@ -43,7 +43,7 @@ const juegosPorConsola = {
         "Enfréntate a desafíos brutales y enemigos mortales en un mundo oscuro y misterioso en este juego de rol de acción. Dark Souls II pondrá a prueba tu habilidad y paciencia mientras exploras su mundo implacable.",
     },
     {
-      imagenSrc: "../assets/images/webP/PortadasPS3/dead-space-ps3.webp",
+      imagenSrc: "./assets/images/webP/PortadasPS3/dead-space-ps3.webp",
       titulo: "Dead Space",
       genero: "Survival horror",
       precio: "$3500",
@@ -52,7 +52,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/PortadasPS3/metal-gear-rising-revengeance-ps3.webp",
+        "./assets/images/webP/PortadasPS3/metal-gear-rising-revengeance-ps3.webp",
       titulo: "Metal Gear Rising: Revengeance",
       genero: "Acción y hack and slash",
       precio: "$3000",
@@ -61,7 +61,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/PortadasPS3/god-of-war-ascension-ps3.webp",
+        "./assets/images/webP/PortadasPS3/god-of-war-ascension-ps3.webp",
       titulo: "God of War: Ascension",
       genero: "Acción y aventura",
       precio: "$4200",
@@ -70,7 +70,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/PortadasPS3/metal-gear-solid-4-guns-of-the-patriots-ps3.webp",
+        "./assets/images/webP/PortadasPS3/metal-gear-solid-4-guns-of-the-patriots-ps3.webp",
       titulo: "Metal Gear Solid 4: Guns of the Patriots",
       genero: "Acción y sigilo",
       precio: "$3800",
@@ -79,7 +79,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/PortadasPS3/need-for-speed-hot-pursuit-ps3.webp",
+        "./assets/images/webP/PortadasPS3/need-for-speed-hot-pursuit-ps3.webp",
       titulo: "Need for Speed: Hot Pursuit",
       genero: "Carreras y mundo abierto",
       precio: "$3000",
@@ -87,7 +87,7 @@ const juegosPorConsola = {
         "Vive la emoción de las carreras ilegales y la persecución policial en este juego de la serie Need for Speed. La adrenalina y la velocidad son la norma en Need for Speed: Hot Pursuit.",
     },
     {
-      imagenSrc: "../assets/images/webP/PortadasPS3/far-cry-4-_1_.webp",
+      imagenSrc: "./assets/images/webP/PortadasPS3/far-cry-4-_1_.webp",
       titulo: "Far Cry 4",
       genero: "Mundo abierto, disparos",
       precio: "$4200",
@@ -96,7 +96,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/PortadasPS3/silent-hill-downpour-_1_.webp",
+        "./assets/images/webP/PortadasPS3/silent-hill-downpour-_1_.webp",
       titulo: "Silent Hill: Downpour",
       genero: "Survival horror",
       precio: "$2800",
@@ -107,7 +107,7 @@ const juegosPorConsola = {
   ps4: [
     {
       imagenSrc:
-        "../assets/images/webP/portadasPS4/crash-bandicoot-4-its-about-time-ps4.webp",
+        "./assets/images/webP/portadasPS4/crash-bandicoot-4-its-about-time-ps4.webp",
       titulo: "Crash Bandicoot 4: It's About Time",
       genero: "Plataforma",
       precio: "$7000",
@@ -115,7 +115,7 @@ const juegosPorConsola = {
         "Únete a Crash Bandicoot y Coco en una aventura a través de distintas dimensiones mientras luchan para evitar que los villanos Neo Cortex y Nefarious Tropy conquisten el multiverso. Crash Bandicoot 4: It's About Time es la última entrega de la icónica serie de plataformas y trae consigo nuevos personajes jugables, mecánicas de juego emocionantes y un montón de desafíos para los fanáticos de la franquicia.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasPS4/cyberpunk-2077-ps4.webp",
+      imagenSrc: "./assets/images/webP/portadasPS4/cyberpunk-2077-ps4.webp",
       titulo: "Cyberpunk 2077",
       genero: "RPG de acción",
       precio: "$8000",
@@ -123,7 +123,7 @@ const juegosPorConsola = {
         "Sumérgete en el mundo de Night City en este juego de rol de acción ambientado en un futuro distópico. En Cyberpunk 2077, asumes el papel de V, un mercenario en busca de un implante único que concede la inmortalidad. Explora un mundo abierto lleno de tecnología avanzada, decisiones morales complicadas y misiones emocionantes mientras te sumerges en una historia épica de conspiración y supervivencia.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasPS4/bloodborne-ps4.webp",
+      imagenSrc: "./assets/images/webP/portadasPS4/bloodborne-ps4.webp",
       titulo: "Bloodborne",
       genero: "Acción de rol",
       precio: "$8000",
@@ -131,7 +131,7 @@ const juegosPorConsola = {
         "Embárcate en una aventura oscura y desafiante en una ciudad infestada de bestias y horrores sobrenaturales. Bloodborne es conocido por su dificultad y atmósfera intensa. En este juego de acción de rol, te enfrentarás a pesadillas grotescas y criaturas grotescas mientras desentrañas los misterios de la ciudad maldita de Yharnam. Prepárate para el combate rápido y brutal en este título exclusivo de PS4.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasPS4/hogwarts-legacy-ps4.webp",
+      imagenSrc: "./assets/images/webP/portadasPS4/hogwarts-legacy-ps4.webp",
       titulo: "Hogwarts Legacy",
       genero: "RPG de mundo abierto",
       precio: "$8000",
@@ -140,7 +140,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasPS4/resident-evil-village-ps4.webp",
+        "./assets/images/webP/portadasPS4/resident-evil-village-ps4.webp",
       titulo: "Resident Evil Village",
       genero: "Survival horror",
       precio: "$8000",
@@ -148,7 +148,7 @@ const juegosPorConsola = {
         "Sumérgete en un pueblo aterrorizante y enfrenta horrores inimaginables mientras buscas a tu hija secuestrada en esta última entrega de la saga Resident Evil. Resident Evil Village combina elementos de survival horror con una narrativa intrigante y una jugabilidad emocionante. Explora el misterioso pueblo y enfréntate a criaturas grotescas en este título que continúa la historia de Ethan Winters.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasPS4/nioh-ps4.webp",
+      imagenSrc: "./assets/images/webP/portadasPS4/nioh-ps4.webp",
       titulo: "Nioh",
       genero: "Acción y rol",
       precio: "$5000",
@@ -156,7 +156,7 @@ const juegosPorConsola = {
         "Únete a William Adams en su lucha contra espíritus malignos y demonios en el Japón feudal en esta emocionante mezcla de acción y rol. Nioh ofrece combate rápido y desafiante, así como una historia basada en eventos históricos. Explora entornos impresionantes, adquiere nuevas habilidades y lucha contra enemigos poderosos mientras te sumerges en una historia épica de honor y venganza.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasPS4/death-stranding-ps4.webp",
+      imagenSrc: "./assets/images/webP/portadasPS4/death-stranding-ps4.webp",
       titulo: "Death Stranding",
       genero: "Acción y exploración",
       precio: "$8000",
@@ -164,7 +164,7 @@ const juegosPorConsola = {
         "Embárcate en un viaje surrealista a través de un mundo devastado, entregando suministros y reconectando a la humanidad en un entorno postapocalíptico. En Death Stranding, interpretas a Sam Bridges en una misión para unir a las personas aisladas en un mundo fragmentado. El juego combina elementos de acción y exploración con una narrativa profunda y visualmente impactante.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasPS4/doom-ps4.webp",
+      imagenSrc: "./assets/images/webP/portadasPS4/doom-ps4.webp",
       titulo: "DOOM",
       genero: "Acción y disparos",
       precio: "$8000",
@@ -172,7 +172,7 @@ const juegosPorConsola = {
         "Enfréntate a hordas de demonios del infierno en una experiencia frenética llena de acción y disparos despiadados. DOOM es un reinicio de la legendaria serie de shooters en primera persona. Lucha contra demonios con una variedad de armas y experimenta una campaña intensa y llena de adrenalina. La velocidad y la violencia son las señas de identidad de este juego.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasPS4/prey-ps4.webp",
+      imagenSrc: "./assets/images/webP/portadasPS4/prey-ps4.webp",
       titulo: "Prey",
       genero: "Acción y suspense",
       precio: "$8000",
@@ -180,7 +180,7 @@ const juegosPorConsola = {
         "Explora una estación espacial abandonada infestada de amenazas alienígenas mientras descubres los oscuros secretos de Talos I. Prey es un juego de acción y suspense que te sumerge en un ambiente espacial claustrofóbico y lleno de misterio. Usa habilidades especiales y tu ingenio para sobrevivir mientras investigas la verdad detrás de los experimentos en la estación.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasPS4/elden-ring.webp",
+      imagenSrc: "./assets/images/webP/portadasPS4/elden-ring.webp",
       titulo: "Elden Ring",
       genero: "Acción de mundo abierto",
       precio: "$8000",
@@ -189,7 +189,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasPS4/call-of-duty-black-ops-cold-war-ps4.webp",
+        "./assets/images/webP/portadasPS4/call-of-duty-black-ops-cold-war-ps4.webp",
       titulo: "Call of Duty: Black Ops Cold War",
       genero: "Shooter de acción",
       precio: "$8000",
@@ -198,7 +198,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasPS4/assassins-creed-valhalla-ps4.webp",
+        "./assets/images/webP/portadasPS4/assassins-creed-valhalla-ps4.webp",
       titulo: "Assassin's Creed Valhalla",
       genero: "Acción y aventura",
       precio: "$8000",
@@ -208,7 +208,7 @@ const juegosPorConsola = {
   ],
   xone: [
     {
-      imagenSrc: "../assets/images/webP/portadasXONE/quantum-break-xone.webp",
+      imagenSrc: "./assets/images/webP/portadasXONE/quantum-break-xone.webp",
       titulo: "Quantum Break",
       genero: "Acción y aventura",
       precio: "$8000",
@@ -217,7 +217,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasXONE/assassins-creed-odyssey-xone.jpg",
+        "./assets/images/webP/portadasXONE/assassins-creed-odyssey-xone.jpg",
       titulo: "Assassin's Creed Odyssey",
       genero: "Mundo abierto, acción",
       precio: "$8000",
@@ -225,7 +225,7 @@ const juegosPorConsola = {
         "Embárcate en una épica odisea en el mundo antiguo de Grecia mientras tomas decisiones que afectarán el destino en Assassin's Creed Odyssey. Explora un vasto mundo lleno de aventuras y desafíos.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasXONE/battlefield-1-xone.webp",
+      imagenSrc: "./assets/images/webP/portadasXONE/battlefield-1-xone.webp",
       titulo: "Battlefield 1",
       genero: "Shooter en primera persona",
       precio: "$8000",
@@ -234,7 +234,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasXONE/call-of-duty-black-ops-iii-xone.webp",
+        "./assets/images/webP/portadasXONE/call-of-duty-black-ops-iii-xone.webp",
       titulo: "Call of Duty: Black Ops III",
       genero: "Shooter en primera persona",
       precio: "$8000",
@@ -243,7 +243,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasXONE/grand-theft-auto-v-xone.webp",
+        "./assets/images/webP/portadasXONE/grand-theft-auto-v-xone.webp",
       titulo: "Grand Theft Auto V",
       genero: "Mundo abierto, acción",
       precio: "$8000",
@@ -252,7 +252,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasXONE/the-witcher-3-wild-hunt-xone.webp",
+        "./assets/images/webP/portadasXONE/the-witcher-3-wild-hunt-xone.webp",
       titulo: "The Witcher 3: Wild Hunt",
       genero: "RPG de mundo abierto",
       precio: "$8000",
@@ -261,7 +261,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasXONE/forza-motorsport-5-xone.webp",
+        "./assets/images/webP/portadasXONE/forza-motorsport-5-xone.webp",
       titulo: "Forza Motorsport 5",
       genero: "Carreras",
       precio: "$8000",
@@ -270,7 +270,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasXONE/gears-of-war-ultimate-edition-xone.webp",
+        "./assets/images/webP/portadasXONE/gears-of-war-ultimate-edition-xone.webp",
       titulo: "Gears of War: Ultimate Edition",
       genero: "Acción y disparos",
       precio: "$8000",
@@ -279,7 +279,7 @@ const juegosPorConsola = {
     },
     {
       imagenSrc:
-        "../assets/images/webP/portadasXONE/star-wars-battlefront-xone.webp",
+        "./assets/images/webP/portadasXONE/star-wars-battlefront-xone.webp",
       titulo: "Star Wars Battlefront",
       genero: "Shooter en primera persona",
       precio: "$8000",
@@ -287,7 +287,7 @@ const juegosPorConsola = {
         "Únete a las batallas icónicas de Star Wars en Star Wars Battlefront. Sumérgete en el universo de Star Wars y lucha en emocionantes batallas galácticas.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasXONE/dark-souls-iii-xone.webp",
+      imagenSrc: "./assets/images/webP/portadasXONE/dark-souls-iii-xone.webp",
       titulo: "Dark Souls III",
       genero: "Acción y rol",
       precio: "$8000",
@@ -295,7 +295,7 @@ const juegosPorConsola = {
         "Enfréntate a desafíos y monstruos despiadados en la oscura y fascinante aventura de Dark Souls III. Pon a prueba tu habilidad y valentía en este juego de rol.",
     },
     {
-      imagenSrc: "../assets/images/webP/portadasXONE/the-evil-within-xone.webp",
+      imagenSrc: "./assets/images/webP/portadasXONE/the-evil-within-xone.webp",
       titulo: "The Evil Within",
       genero: "Survival horror",
       precio: "$8000",
@@ -447,7 +447,7 @@ function cargarTienda() {
             id="button_tienda_hamburger"
           >
             <img
-              src="../assets/images/nav_icos/hamburger-menu-ico.svg"
+              src="./assets/images/nav_icos/hamburger-menu-ico.svg"
               id="hamburger_tienda"
               alt="hamburger_ico"
             />
@@ -681,7 +681,7 @@ function cargarLogin() {
     >
       <div class="">
         <img
-          src="../assets/images/nav_icos/user-registro-ico.svg"
+          src="./assets/images/nav_icos/user-registro-ico.svg"
           alt="Perfil de usuario"
           width="100"
           height="75"
@@ -746,7 +746,7 @@ function cargarAboutUs() {
         >
           <p class="p_about">
             <img
-              src="../assets/images/nav_icos/location-ico.svg"
+              src="./assets/images/nav_icos/location-ico.svg"
               alt="ubicación"
               class="me-2"
             />Encontranos en: L. N. Alem 215, Local 16, Monte Grande, Bs.
@@ -758,7 +758,7 @@ function cargarAboutUs() {
         >
           <p class="p_about">
             <img
-              src="../assets/images/nav_icos/clock-ico.svg"
+              src="./assets/images/nav_icos/clock-ico.svg"
               alt="ubicación"
               class="me-2"
             />Horario de atención:
@@ -815,7 +815,7 @@ function cargarAboutUs() {
     </p>
     <div>
       <img
-        src="../assets/images//webP/about_us.webp"
+        src="./assets/images//webP/about_us.webp"
         alt="us"
         class="img-fluid"
         id="img_about"

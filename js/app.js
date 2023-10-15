@@ -224,7 +224,7 @@ function cargarIndex() {
     identificarConsola("btnXONE");
   });
 }
-function cargarDetalles(game) {
+async function cargarDetalles(game) {
   cambiarPage(`   <div class="row" id="pageDetailContainer">
   <div
     class="d-flex justify-content-evenly flex-wrap m-5"
@@ -246,6 +246,7 @@ function cargarDetalles(game) {
     </section>
   </div>
 </div>`);
+  console.log(game.id);
   const imgCont = document.querySelector("#imgCont");
   const img = document.createElement("img");
   const datCont = document.querySelector("#datCont");
@@ -253,6 +254,7 @@ function cargarDetalles(game) {
   const descCont = document.querySelector("#descCont");
   const descP = document.createElement("p");
   const tituloH = document.createElement("h2");
+  const videoCont = document.querySelector("#videoCont");
   imgCont.appendChild(img);
   img.src = game.imagenSrc;
   datCont.appendChild(parrafo);
@@ -261,6 +263,15 @@ function cargarDetalles(game) {
   descCont.appendChild(descP);
   tituloH.innerText = game.titulo.toUpperCase();
   descP.innerText = `${game.descripcion}`;
+  const getIframe = async () => {
+    const response = await fetch(
+      `https://www.googleapis.com/youtube/v3/videos?part=player&id=${game.id}&key=AIzaSyA0v1rVjAALrB20vp1hY5MO7ohx395tcuY`
+    );
+    const result = await response.json();
+    return result.items[0].player.embedHtml;
+  };
+  const iframe = await getIframe(game.id);
+  videoCont.innerHTML = iframe;
 }
 function cargarLogup() {
   cambiarPage(`<div class="row m-0">
@@ -334,17 +345,19 @@ function cargarLogup() {
     const txtPassRep = document.querySelector(
       "#contrasenia_usuario_rep_log"
     ).value;
-    if (txtPass == txtPassRep) {
-      logUp(txtUser, txtPass);
-      txtUser.value = "";
-      txtPass.value = "";
-      txtPassRep.value = "";
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Oops...",
-        text: "Las contraseñas deben coincidir!",
-      });
+    if (txtPass != "" && txtUser != "") {
+      if (txtPass == txtPassRep) {
+        logUp(txtUser, txtPass);
+        txtUser.value = "";
+        txtPass.value = "";
+        txtPassRep.value = "";
+      } else {
+        Swal.fire({
+          icon: "error",
+          title: "Oops...",
+          text: "Las contraseñas deben coincidir!",
+        });
+      }
     }
   });
   const swapLogIn = document.querySelector("#swapLogIn");
@@ -523,7 +536,6 @@ const aIndex = document.querySelector("#aIndex");
 aIndex.addEventListener("click", function () {
   cargarIndex();
 });
-
 const aTienda = document.querySelector("#aTienda");
 aTienda.addEventListener("click", function () {
   cargarTienda();
@@ -548,21 +560,23 @@ aAboutUs.forEach((el) => {
 function logIn(nombre, password) {
   const userNombre = localStorage.getItem("userNombre");
   const userPassword = localStorage.getItem("userPassword");
-  if (nombre == userNombre && password == userPassword) {
-    document.querySelector("#nombre_usuario_ini").value = "";
-    document.querySelector("#contrasenia_usuario_ini").value = "";
-    Swal.fire({
-      position: "center",
-      icon: "success",
-      title: "¡Bienvenido!",
-      timer: 1500,
-    });
-  } else {
-    Swal.fire({
-      icon: "error",
-      title: "Oops...",
-      text: "Usuario y/o contraseña incorrectos",
-    });
+  if (userNombre != "" && userPassword != "") {
+    if (nombre == userNombre && password == userPassword) {
+      document.querySelector("#nombre_usuario_ini").value = "";
+      document.querySelector("#contrasenia_usuario_ini").value = "";
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "¡Bienvenido!",
+        timer: 1500,
+      });
+    } else {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Usuario y/o contraseña incorrectos",
+      });
+    }
   }
 }
 //FUNCION QUE REGISTRA AL USUARIO

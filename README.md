@@ -58,7 +58,7 @@ En este espacio voy a dejar acalaraciones para que el profesor lea y tenga en co
 3. iniciar_sesion posee un formulario de ingreso de datos NO funcional en la entrega final por poseer caracteristicas no vistas durante el curso.
 4. en cuanto a la vista del deploy de gitpages en mi celular (720x1600) la pagina se ve bien a exepcion de un pequeño espacio en blanco al final debajoo del footer, que difiere de lo que muestra el inspector de elementos de los buscadores donde muestran espacios blancos de diferentes tamaños. No supe solucionar la cuestion, y aun que uso Body 100vh, que segun el inspector esta aplicado correctamente en el body de todas las paginas del sitio, sigue sucediento. Si encuentra el error, favor de señalarlo.
 
- #Aclaraciones para el tutor corrector 
+ #Aclaraciones para el profesor: 
  En este espacio voy a dejar acalaraciones para que el profesor lea y tenga en consideración.
  1. Este sitio pertenece a la entrega final del curso de Desarrollo Web de Coder.
  2. El sitio fue migrado de MPA a SPA, todo el contenido se ejecuta en index.html de manera dinamica.

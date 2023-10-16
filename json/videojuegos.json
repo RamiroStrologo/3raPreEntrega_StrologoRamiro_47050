@@ -99,6 +99,7 @@
   ],
   "logoPS3": [
     {
+      "consola": "btnPS3",
       "imgSepSrc": "./assets/images/nav_icos/ps-logo-ico.svg",
       "txtSep": "Juegos de PS3",
       "altImgSep": "IconoPS"
@@ -204,6 +205,7 @@
   ],
   "logoPS4": [
     {
+      "consola": "btnPS4",
       "imgSepSrc": "./assets/images/nav_icos/ps-logo-ico.svg",
       "txtSep": "Juegos de PS4",
       "altImgSep": "IconoPS"
@@ -309,6 +311,7 @@
   ],
   "logoXONE": [
     {
+      "consola": "btnXONE",
       "imgSepSrc": "./assets/images/nav_icos/xbox-logo-ico.svg",
       "txtSep": "Juegos de Xbox One",
       "altImgSep": "IconoXbox"

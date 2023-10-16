@@ -55,7 +55,7 @@ function mostrarJuegos(arrayGames, consolaInfo) {
     divGame.appendChild(imgGame);
     divGame.appendChild(parrafo);
     childGamesContainer.appendChild(divGame);
-    asignarEventClickDetalles(divGame, game);
+    asignarEventClickDetalles(divGame, game, consolaInfo);
   }
   gamesContainer.appendChild(childGamesContainer);
 }
@@ -97,11 +97,10 @@ async function identificarConsola(btnid) {
       break;
   }
 }
-function asignarEventClickDetalles(divGame, game) {
-  const DetailContainer = document.querySelector("#pageDetailContainer");
+function asignarEventClickDetalles(divGame, game, consolaInfo) {
   const gameData = game;
   divGame.addEventListener("click", function () {
-    cargarDetalles(gameData);
+    cargarDetalles(gameData, consolaInfo);
   });
 }
 //FUNCION QUE CAMBIA EL CONTENIDO MAIN DEL HTML(SPA)
@@ -224,12 +223,15 @@ function cargarIndex() {
     identificarConsola("btnXONE");
   });
 }
-async function cargarDetalles(game) {
+async function cargarDetalles(game, consolaInfo) {
   cambiarPage(`   <div class="row" id="pageDetailContainer">
   <div
     class="d-flex justify-content-evenly flex-wrap m-5"
     id="detailCont"
   >
+  <div id="backCont" class="d-flex align-self-start">
+   <img src="./assets/images/nav_icos/back_ico.svg" alt="Icono de volver" />
+  </div>
     <aside
       class="col-4 d-flex flex-column flex-wrap justify-content-center pt-3 pe-3 ps-3"
       id="asideDetalles"
@@ -246,7 +248,6 @@ async function cargarDetalles(game) {
     </section>
   </div>
 </div>`);
-  console.log(game.id);
   const imgCont = document.querySelector("#imgCont");
   const img = document.createElement("img");
   const datCont = document.querySelector("#datCont");
@@ -255,6 +256,7 @@ async function cargarDetalles(game) {
   const descP = document.createElement("p");
   const tituloH = document.createElement("h2");
   const videoCont = document.querySelector("#videoCont");
+  const lnkVolver = document.querySelector("#backCont");
   imgCont.appendChild(img);
   img.src = game.imagenSrc;
   datCont.appendChild(parrafo);
@@ -263,6 +265,7 @@ async function cargarDetalles(game) {
   descCont.appendChild(descP);
   tituloH.innerText = game.titulo.toUpperCase();
   descP.innerText = `${game.descripcion}`;
+  //Funcion flecha que consume la API de youtube para obtener el iframe del video
   const getIframe = async () => {
     const response = await fetch(
       `https://www.googleapis.com/youtube/v3/videos?part=player&id=${game.id}&key=AIzaSyA0v1rVjAALrB20vp1hY5MO7ohx395tcuY`
@@ -272,6 +275,11 @@ async function cargarDetalles(game) {
   };
   const iframe = await getIframe(game.id);
   videoCont.innerHTML = iframe;
+
+  lnkVolver.addEventListener("click", () => {
+    cargarTienda();
+    identificarConsola(consolaInfo[0].consola);
+  });
 }
 function cargarLogup() {
   cambiarPage(`<div class="row m-0">

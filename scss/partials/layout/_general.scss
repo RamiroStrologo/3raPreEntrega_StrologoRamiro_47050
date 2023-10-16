@@ -1,55 +1,54 @@
-body{
-    height: 100dvh !important;   
-    overflow-x: hidden;
-    .header_grl{   
-        border-bottom: 2px solid $colorDos !important;
-        background-color: $colorTres;
-        nav{
-            ul{
-                li{
-                    color: $colorCinco;
-                    img{
-                        width: 35px;
-                        height: 35px;
-                        margin-right: 100px !important;
-                        padding-bottom: 0px !important;
-                        transition: border-bottom 1s ease !important;
-                        &:hover{             
-                         border-bottom: 2px solid $colorCinco;
-                        }
-                    }
-                 }                 
+body {
+  height: 100dvh !important;
+  overflow-x: hidden;
+  .header_grl {
+    border-bottom: 2px solid $colorDos !important;
+    background-color: $colorTres;
+    nav {
+      ul {
+        li {
+          color: $colorCinco;
+          img {
+            width: 35px;
+            height: 35px;
+            margin-right: 100px !important;
+            padding-bottom: 0px !important;
+            transition: border-bottom 1s ease !important;
+            &:hover {
+              border-bottom: 2px solid $colorCinco;
             }
-        }      
-    }
-    main{
-        background-color: $colorUno;
-        flex: 1 !important;
-      
-    }
-
-    .footer_grl{
-        margin-top: auto !important;
-        background-color: $colorTres;  
-        border-top: 2px solid $colorDos !important;
-        nav{
-            ul{
-                li{
-                    color: $colorCinco;
-                    img{
-                        width: 30px;
-                        height: 30px;
-                        margin-right: 40px !important;
-                    }
-                    a{
-                        color: $colorCinco !important;
-                    }
-                }
-            }
+          }
         }
+      }
     }
-    nav{
-        background-color: $colorTres;
+  }
+  main {
+    background-color: $colorUno;
+    flex: 1 !important;
+  }
+
+  .footer_grl {
+    margin-top: auto !important;
+    background-color: $colorTres;
+    border-top: 2px solid $colorDos !important;
+    nav {
+      ul {
+        li {
+          color: $colorCinco;
+          img {
+            width: 30px;
+            height: 30px;
+            margin-right: 40px !important;
+            margin-left: 30px !important;
+          }
+          a {
+            color: $colorCinco !important;
+          }
+        }
+      }
     }
-    
+  }
+  nav {
+    background-color: $colorTres;
+  }
 }

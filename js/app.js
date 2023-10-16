@@ -233,14 +233,14 @@ async function cargarDetalles(game, consolaInfo) {
    <img src="./assets/images/nav_icos/back_ico.svg" alt="Icono de volver" />
   </div>
     <aside
-      class="col-4 d-flex flex-column flex-wrap justify-content-center pt-3 pe-3 ps-3"
+      class="col-sm-12 col-md-4 d-flex flex-column flex-wrap justify-content-center pt-3 pe-3 ps-3"
       id="asideDetalles"
     >
       <div id="imgCont" class="d-flex justify-content-center mb-3"></div>
       <div id="datCont" class="ms-3"></div>
     </aside>
     <section
-      class="col-6 d-flex flex-column flex-wrap justify-content-evenly ps-5 pe-5"
+      class=" col-sm-12 col-md-6 d-flex flex-column flex-wrap justify-content-evenly ps-5 pe-5 me-5"
       id="secDetalles"
     >
       <div id="descCont" class="flex-wrap"></div>
@@ -271,8 +271,11 @@ async function cargarDetalles(game, consolaInfo) {
       `https://www.googleapis.com/youtube/v3/videos?part=player&id=${game.id}&key=AIzaSyA0v1rVjAALrB20vp1hY5MO7ohx395tcuY`
     );
     const result = await response.json();
-    return result.items[0].player.embedHtml;
+    let iframeHtml = result.items[0].player.embedHtml;
+    iframeHtml = iframeHtml.replace(/width="\d+"/, `width="560"`);
+    return iframeHtml;
   };
+
   const iframe = await getIframe(game.id);
   videoCont.innerHTML = iframe;
 

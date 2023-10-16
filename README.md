@@ -13,6 +13,7 @@ Ademas ofrece un chat con el que podran comunicarse y realizar sus consultas.
 -NODE.js <br>
 -SASS <br>
 -SweetAlert
+-YouTube API 
 # Paleta de colores
 #0D1B2A: Azul Marino Profundo <br>
 #1B263B: Azul Oscuro <br>
@@ -65,5 +66,7 @@ En este espacio voy a dejar acalaraciones para que el profesor lea y tenga en co
  4. El CSS (css/style.css) aplicado se encuentra modularizado en SCSS (scss/style.scss)
  5. El sitio cuenta con SweetAlert en los modulos de Login/up. Por motivos que desconozco, estos aparecen desalineados. 
  6. En el codigo se encuentran comentarios explicativos.
- 7. 6/10 se agrego la seccion de detalles personalizada al hacer click en la portada de un videojuego. (sin finalizar)
+ 8. La app consume la API de youtube para traer ifrmes y reproducir videos en la sección de detalles.
+ 9. La API de Youtube utilizada requiere de una credencial dada. Desconozco sus requisitos y limites pero deberia funcionar si se visualisa desde otro PC.
+ 10. La consola tira algunos errores relacionados a la API de YouTube en la pantalla de detalles. Sin embargo funciona bien y los ifram que proveee se obtienen y reproducen bien.
    
